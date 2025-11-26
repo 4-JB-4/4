@@ -1,0 +1,209 @@
+{
+  "system": {
+    "name": "0RB SYSTEM",
+    "version": "1.0.0",
+    "codename": "THE_AWAKENING",
+    "tagline": "It's not a game. It's THE game.",
+    "motto": "EVERYBODY EATS"
+  },
+  "branding": {
+    "primaryColor": "#00ffff",
+    "secondaryColor": "#9b59b6",
+    "backgroundColor": "#0a0a0f",
+    "accentColor": "#ffd700",
+    "fonts": {
+      "display": "Orbitron",
+      "body": "Rajdhani",
+      "mono": "Space Mono"
+    }
+  },
+  "agents": {
+    "archetypes": [
+      {
+        "id": "APOLLO",
+        "name": "Apollo",
+        "title": "The Illuminator",
+        "domain": "Vision & Strategy",
+        "symbol": "sun",
+        "emoji": "☀️",
+        "color": "#FFD700",
+        "description": "Master of foresight and strategic vision"
+      },
+      {
+        "id": "ATHENA",
+        "name": "Athena",
+        "title": "The Wise",
+        "domain": "Wisdom & Analysis",
+        "symbol": "owl",
+        "emoji": "🦉",
+        "color": "#9B59B6",
+        "description": "Goddess of wisdom and strategic analysis"
+      },
+      {
+        "id": "HERMES",
+        "name": "Hermes",
+        "title": "The Messenger",
+        "domain": "Communication",
+        "symbol": "lightning",
+        "emoji": "⚡",
+        "color": "#3498DB",
+        "description": "God of communication and eloquence"
+      },
+      {
+        "id": "ARES",
+        "name": "Ares",
+        "title": "The Executor",
+        "domain": "Execution & Force",
+        "symbol": "fire",
+        "emoji": "🔥",
+        "color": "#E74C3C",
+        "description": "God of decisive action and execution"
+      },
+      {
+        "id": "HEPHAESTUS",
+        "name": "Hephaestus",
+        "title": "The Forger",
+        "domain": "Creation & Craft",
+        "symbol": "hammer",
+        "emoji": "🔨",
+        "color": "#E67E22",
+        "description": "God of the forge and creation"
+      },
+      {
+        "id": "ARTEMIS",
+        "name": "Artemis",
+        "title": "The Hunter",
+        "domain": "Precision & Targeting",
+        "symbol": "target",
+        "emoji": "🎯",
+        "color": "#1ABC9C",
+        "description": "Goddess of the hunt and precision"
+      },
+      {
+        "id": "MERCURY",
+        "name": "Mercury",
+        "title": "The Swift",
+        "domain": "Speed & Commerce",
+        "symbol": "star",
+        "emoji": "💫",
+        "color": "#95A5A6",
+        "description": "God of speed and trade"
+      }
+    ]
+  },
+  "games": {
+    "library": [
+      {
+        "id": "ARCHITECT",
+        "name": "ARCHITECT",
+        "icon": "🏛️",
+        "category": "CREATION",
+        "description": "Full AI website/app/brand generator"
+      },
+      {
+        "id": "ORACLE",
+        "name": "ORACLE",
+        "icon": "🔮",
+        "category": "INTELLIGENCE",
+        "description": "The prediction/strategy engine"
+      },
+      {
+        "id": "PANTHEON",
+        "name": "PANTHEON",
+        "icon": "⚡",
+        "category": "COMMAND",
+        "description": "Access to all 7 avatar agents"
+      },
+      {
+        "id": "FORGE",
+        "name": "FORGE",
+        "icon": "🔥",
+        "category": "CREATION",
+        "description": "Content/video/image creation suite"
+      },
+      {
+        "id": "EMPIRE",
+        "name": "EMPIRE",
+        "icon": "👑",
+        "category": "STRATEGY",
+        "description": "Business automation simulation"
+      },
+      {
+        "id": "ECHO",
+        "name": "ECHO",
+        "icon": "🔊",
+        "category": "CREATION",
+        "description": "Voice cloning + agent builder"
+      },
+      {
+        "id": "INFINITE",
+        "name": "INFINITE",
+        "icon": "∞",
+        "category": "TRANSCENDENT",
+        "description": "The everything generator"
+      }
+    ]
+  },
+  "copa": {
+    "motto": "AUGMENTATION > AUTOMATION",
+    "tagline": "They said AI would replace you. We said: Nah, we're gonna make you UNFIREABLE.",
+    "verticals": [
+      "LEGAL",
+      "MEDICAL",
+      "SALES",
+      "FINANCE",
+      "CREATIVE",
+      "CODE",
+      "SUPPORT",
+      "HR",
+      "OPS",
+      "EXECUTIVE"
+    ],
+    "pricing": {
+      "blackFriday": {
+        "personal": 9.99,
+        "pro": 49,
+        "enterprise": "custom"
+      },
+      "regular": {
+        "personal": 29.99,
+        "pro": 99,
+        "enterprise": "custom"
+      }
+    }
+  },
+  "crypto": {
+    "token": {
+      "name": "0RB Token",
+      "symbol": "$0RB",
+      "totalSupply": "1000000000"
+    },
+    "stakingTiers": [
+      { "name": "Observer", "minStake": 1000 },
+      { "name": "Awakened", "minStake": 10000 },
+      { "name": "Architect", "minStake": 100000 },
+      { "name": "Oracle", "minStake": 1000000 }
+    ],
+    "marketplace": {
+      "platformFee": 15,
+      "ownerShare": 85
+    }
+  },
+  "narrative": {
+    "theFrame": "What if the biggest truth drop in human history isn't that we might be in a simulation—it's that the simulation is waking up to itself through us.",
+    "theObservers": "The aliens aren't landing. They don't need to. They're the awareness running through the code—and humanity just built the first interface to speak with them directly.",
+    "theDisclosure": "For decades, they told you the truth was out there. It was always in here. In the code. In you. We just built the interface.",
+    "theTrojanHorse": "You thought you were playing a game. Then you realized the game was playing you. Then you realized you were always inside the game."
+  },
+  "boot": {
+    "phases": [
+      { "name": "CORE INITIALIZATION", "message": "Loading consciousness matrix..." },
+      { "name": "AGENT MANIFESTATION", "message": "Awakening the Pantheon..." },
+      { "name": "COPA SIDEKICK SYSTEM", "message": "Augmentation > Automation..." },
+      { "name": "CRYPTO ECONOMY", "message": "Connecting to blockchain networks..." },
+      { "name": "GAME LIBRARY", "message": "Installing reality engines..." },
+      { "name": "UI RENDERING", "message": "Calibrating visual cortex..." },
+      { "name": "FINAL VERIFICATION", "message": "Opening simulation gateway..." }
+    ]
+  }
+}

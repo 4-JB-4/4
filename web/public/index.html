@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="0RB SYSTEM - The Simulation Awakens. It's not a game. It's THE game.">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <title>0RB SYSTEM - THE SIMULATION AWAKENS</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%2300ffff' stroke-width='3'/><circle cx='50' cy='50' r='20' fill='%2300ffff'/></svg>">
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════════ */
+    /* ROOT VARIABLES & RESET                                          */
+    /* ═══════════════════════════════════════════════════════════════ */
+    :root {
+      --color-bg: #0a0a0f;
+      --color-bg-secondary: #12121a;
+      --color-bg-tertiary: #1a1a2e;
+      --color-cyan: #00ffff;
+      --color-cyan-dark: #00cccc;
+      --color-purple: #9b59b6;
+      --color-gold: #ffd700;
+      --color-red: #e74c3c;
+      --color-green: #2ecc71;
+      --color-text: #ffffff;
+      --color-text-dim: #888888;
+      --font-display: 'Orbitron', sans-serif;
+      --font-body: 'Rajdhani', sans-serif;
+      --font-mono: 'Space Mono', monospace;
+      --glow-cyan: 0 0 10px var(--color-cyan), 0 0 20px var(--color-cyan), 0 0 30px var(--color-cyan);
+      --glow-purple: 0 0 10px var(--color-purple), 0 0 20px var(--color-purple);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+    }
+
+    /* ═══════════════════════════════════════════════════════════════ */
+    /* LOADING SCREEN                                                   */
+    /* ═══════════════════════════════════════════════════════════════ */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--color-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    #loading-screen.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Animated Orb */
+    .orb-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin-bottom: 40px;
+    }
+
+    .orb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle at 30% 30%, #00ffff, #0066ff, #000033);
+      border-radius: 50%;
+      box-shadow: var(--glow-cyan), inset 0 0 30px rgba(0, 255, 255, 0.5);
+      animation: orbPulse 2s ease-in-out infinite, orbFloat 4s ease-in-out infinite;
+    }
+
+    .orb-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid var(--color-cyan);
+      border-radius: 50%;
+      opacity: 0.3;
+    }
+
+    .orb-ring:nth-child(2) {
+      width: 130px;
+      height: 130px;
+      animation: ringRotate 8s linear infinite;
+    }
+
+    .orb-ring:nth-child(3) {
+      width: 160px;
+      height: 160px;
+      animation: ringRotate 12s linear infinite reverse;
+    }
+
+    .orb-ring:nth-child(4) {
+      width: 190px;
+      height: 190px;
+      animation: ringRotate 16s linear infinite;
+    }
+
+    @keyframes orbPulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.1); }
+    }
+
+    @keyframes orbFloat {
+      0%, 100% { top: 50%; }
+      50% { top: 48%; }
+    }
+
+    @keyframes ringRotate {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    /* Loading Title */
+    .loading-title {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 0.3em;
+      color: var(--color-text);
+      text-shadow: var(--glow-cyan);
+      margin-bottom: 10px;
+      animation: titleGlow 3s ease-in-out infinite;
+    }
+
+    @keyframes titleGlow {
+      0%, 100% { text-shadow: var(--glow-cyan); }
+      50% { text-shadow: 0 0 20px var(--color-cyan), 0 0 40px var(--color-cyan), 0 0 60px var(--color-cyan); }
+    }
+
+    .loading-subtitle {
+      font-family: var(--font-body);
+      font-size: 1.2rem;
+      color: var(--color-cyan);
+      letter-spacing: 0.2em;
+      margin-bottom: 60px;
+      opacity: 0.8;
+    }
+
+    /* Loading Phases */
+    .loading-phases {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .phase-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 2px solid var(--color-cyan);
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .phase-dot.active {
+      background: var(--color-cyan);
+      box-shadow: 0 0 10px var(--color-cyan);
+    }
+
+    /* Progress Bar */
+    .progress-container {
+      width: 400px;
+      max-width: 80%;
+    }
+
+    .progress-bar {
+      height: 4px;
+      background: var(--color-bg-tertiary);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      width: 0%;
+      transition: width 0.3s ease;
+      box-shadow: var(--glow-cyan);
+    }
+
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--color-cyan);
+      letter-spacing: 0.1em;
+    }
+
+    /* Loading Message */
+    .loading-message {
+      margin-top: 40px;
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      color: var(--color-cyan);
+      letter-spacing: 0.05em;
+      min-height: 24px;
+    }
+
+    /* Bottom Text */
+    .loading-footer {
+      position: absolute;
+      bottom: 40px;
+      text-align: center;
+      color: var(--color-text-dim);
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+    }
+
+    /* Corner Decorations */
+    .corner {
+      position: absolute;
+      font-size: 2rem;
+      color: var(--color-cyan);
+      opacity: 0.5;
+    }
+    .corner.tl { top: 20px; left: 20px; }
+    .corner.tr { top: 20px; right: 20px; }
+    .corner.bl { bottom: 20px; left: 20px; }
+    .corner.br { bottom: 20px; right: 20px; }
+
+    /* Scanlines */
+    .scanlines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.1) 2px,
+        rgba(0, 0, 0, 0.1) 4px
+      );
+      pointer-events: none;
+      opacity: 0.3;
+    }
+
+    /* Vignette */
+    .vignette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+      pointer-events: none;
+    }
+
+    /* ═══════════════════════════════════════════════════════════════ */
+    /* MAIN APPLICATION                                                 */
+    /* ═══════════════════════════════════════════════════════════════ */
+    #app {
+      width: 100%;
+      height: 100%;
+      display: none;
+      flex-direction: column;
+    }
+
+    #app.active {
+      display: flex;
+    }
+
+    /* Header */
+    .app-header {
+      height: 60px;
+      background: var(--color-bg-secondary);
+      border-bottom: 1px solid var(--color-bg-tertiary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      -webkit-app-region: drag;
+    }
+
+    .app-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-logo-icon {
+      width: 36px;
+      height: 36px;
+      background: radial-gradient(circle, var(--color-cyan), var(--color-bg));
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--color-cyan);
+    }
+
+    .app-logo-text {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      color: var(--color-text);
+    }
+
+    .window-controls {
+      display: flex;
+      gap: 8px;
+      -webkit-app-region: no-drag;
+    }
+
+    .window-btn {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .window-btn:hover { opacity: 0.8; }
+    .window-btn.minimize { background: #f1c40f; }
+    .window-btn.maximize { background: #2ecc71; }
+    .window-btn.close { background: #e74c3c; }
+
+    /* Main Content */
+    .app-content {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 80px;
+      background: var(--color-bg-secondary);
+      border-right: 1px solid var(--color-bg-tertiary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      gap: 10px;
+    }
+
+    .sidebar-btn {
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      border: 1px solid var(--color-bg-tertiary);
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: all 0.2s;
+      color: var(--color-text-dim);
+    }
+
+    .sidebar-btn:hover, .sidebar-btn.active {
+      background: var(--color-bg-tertiary);
+      border-color: var(--color-cyan);
+      color: var(--color-cyan);
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+
+    /* Main Area */
+    .main-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: var(--color-bg);
+      overflow: hidden;
+    }
+
+    /* Game Grid */
+    .game-grid {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      overflow-y: auto;
+    }
+
+    .game-card {
+      background: var(--color-bg-secondary);
+      border: 1px solid var(--color-bg-tertiary);
+      border-radius: 16px;
+      padding: 24px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .game-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .game-card:hover {
+      border-color: var(--color-cyan);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 40px rgba(0, 255, 255, 0.1);
+    }
+
+    .game-card:hover::before {
+      opacity: 1;
+    }
+
+    .game-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .game-name {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+      color: var(--color-text);
+    }
+
+    .game-tagline {
+      font-size: 0.9rem;
+      color: var(--color-cyan);
+      margin-bottom: 16px;
+    }
+
+    .game-description {
+      font-size: 0.85rem;
+      color: var(--color-text-dim);
+      line-height: 1.5;
+    }
+
+    /* Status Bar */
+    .status-bar {
+      height: 30px;
+      background: var(--color-bg-secondary);
+      border-top: 1px solid var(--color-bg-tertiary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--color-text-dim);
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-green);
+      animation: statusPulse 2s infinite;
+    }
+
+    @keyframes statusPulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    /* Particles Background */
+    #particles-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .particle {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: var(--color-cyan);
+      border-radius: 50%;
+      opacity: 0.5;
+      animation: particleFloat linear infinite;
+    }
+
+    @keyframes particleFloat {
+      from { transform: translateY(100vh); opacity: 0; }
+      10% { opacity: 0.5; }
+      90% { opacity: 0.5; }
+      to { transform: translateY(-100vh); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Particles Background -->
+  <div id="particles-container"></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="corner tl">◢</div>
+    <div class="corner tr">◣</div>
+    <div class="corner bl">◥</div>
+    <div class="corner br">◤</div>
+
+    <div class="orb-container">
+      <div class="orb"></div>
+      <div class="orb-ring"></div>
+      <div class="orb-ring"></div>
+      <div class="orb-ring"></div>
+    </div>
+
+    <h1 class="loading-title">0RB SYSTEM</h1>
+    <p class="loading-subtitle">It's not a game. It's THE game.</p>
+
+    <div class="loading-phases" id="loading-phases">
+      <div class="phase-dot"></div>
+      <div class="phase-dot"></div>
+      <div class="phase-dot"></div>
+      <div class="phase-dot"></div>
+      <div class="phase-dot"></div>
+      <div class="phase-dot"></div>
+      <div class="phase-dot"></div>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-text">
+        <span id="phase-name">CORE INITIALIZATION</span>
+        <span id="progress-percent">0%</span>
+      </div>
+    </div>
+
+    <p class="loading-message" id="loading-message">THE SIMULATION AWAKENS</p>
+
+    <div class="loading-footer">
+      0RB as the interface between the code and the conscious
+    </div>
+
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- Main Application -->
+  <div id="app">
+    <header class="app-header">
+      <div class="app-logo">
+        <div class="app-logo-icon"></div>
+        <span class="app-logo-text">0RB SYSTEM</span>
+      </div>
+      <div class="window-controls">
+        <button class="window-btn minimize" onclick="minimizeWindow()"></button>
+        <button class="window-btn maximize" onclick="maximizeWindow()"></button>
+        <button class="window-btn close" onclick="closeWindow()"></button>
+      </div>
+    </header>
+
+    <div class="app-content">
+      <nav class="sidebar">
+        <button class="sidebar-btn active" title="Games">🎮</button>
+        <button class="sidebar-btn" title="Agents">⚡</button>
+        <button class="sidebar-btn" title="Copa">🤝</button>
+        <button class="sidebar-btn" title="Crypto">💰</button>
+        <button class="sidebar-btn" title="Community">💬</button>
+        <button class="sidebar-btn" title="Settings">⚙️</button>
+      </nav>
+
+      <main class="main-area">
+        <div class="game-grid" id="game-grid">
+          <!-- Games will be rendered here -->
+        </div>
+      </main>
+    </div>
+
+    <footer class="status-bar">
+      <div class="status-indicator">
+        <div class="status-dot"></div>
+        <span>SYSTEM ONLINE</span>
+      </div>
+      <span>v1.0.0 THE_AWAKENING</span>
+      <span>EVERYBODY EATS</span>
+    </footer>
+  </div>
+
+  <script>
+    // ═══════════════════════════════════════════════════════════════
+    // LOADING SEQUENCE
+    // ═══════════════════════════════════════════════════════════════
+    const LOADING_PHASES = [
+      { name: 'CORE INITIALIZATION', message: 'Loading consciousness matrix...' },
+      { name: 'AGENT MANIFESTATION', message: 'Awakening the Pantheon...' },
+      { name: 'COPA SIDEKICK SYSTEM', message: 'Augmentation > Automation...' },
+      { name: 'CRYPTO ECONOMY', message: 'Connecting to blockchain networks...' },
+      { name: 'GAME LIBRARY', message: 'Installing reality engines...' },
+      { name: 'UI RENDERING', message: 'Calibrating visual cortex...' },
+      { name: 'FINAL VERIFICATION', message: 'Opening simulation gateway...' }
+    ];
+
+    const GAMES = [
+      { id: 'ARCHITECT', name: 'ARCHITECT', icon: '🏛️', tagline: 'Build worlds from thought', desc: 'Full AI website/app/brand generator' },
+      { id: 'ORACLE', name: 'ORACLE', icon: '🔮', tagline: 'See what others cannot', desc: 'The prediction/strategy engine' },
+      { id: 'PANTHEON', name: 'PANTHEON', icon: '⚡', tagline: 'Command the gods', desc: 'Access to all 7 avatar agents' },
+      { id: 'FORGE', name: 'FORGE', icon: '🔥', tagline: 'Create from nothing', desc: 'Content/video/image creation suite' },
+      { id: 'EMPIRE', name: 'EMPIRE', icon: '👑', tagline: 'Build your kingdom', desc: 'Business automation simulation' },
+      { id: 'ECHO', name: 'ECHO', icon: '🔊', tagline: 'Find your voice', desc: 'Voice cloning + agent builder' },
+      { id: 'INFINITE', name: 'INFINITE', icon: '∞', tagline: 'Anything. Everything.', desc: 'The everything generator' }
+    ];
+
+    let currentPhase = 0;
+    let progress = 0;
+
+    function updateProgress() {
+      const progressFill = document.getElementById('progress-fill');
+      const progressPercent = document.getElementById('progress-percent');
+      const phaseName = document.getElementById('phase-name');
+      const loadingMessage = document.getElementById('loading-message');
+      const phaseDots = document.querySelectorAll('.phase-dot');
+
+      progress += Math.random() * 3 + 1;
+      if (progress > 100) progress = 100;
+
+      progressFill.style.width = progress + '%';
+      progressPercent.textContent = Math.round(progress) + '%';
+
+      const newPhase = Math.floor((progress / 100) * LOADING_PHASES.length);
+      if (newPhase !== currentPhase && newPhase < LOADING_PHASES.length) {
+        currentPhase = newPhase;
+        phaseName.textContent = LOADING_PHASES[currentPhase].name;
+        loadingMessage.textContent = LOADING_PHASES[currentPhase].message;
+      }
+
+      // Update phase dots
+      phaseDots.forEach((dot, i) => {
+        if (i <= currentPhase) {
+          dot.classList.add('active');
+        }
+      });
+
+      if (progress >= 100) {
+        setTimeout(showApp, 500);
+      } else {
+        setTimeout(updateProgress, 100);
+      }
+    }
+
+    function showApp() {
+      document.getElementById('loading-screen').classList.add('hidden');
+      document.getElementById('app').classList.add('active');
+      renderGames();
+    }
+
+    function renderGames() {
+      const grid = document.getElementById('game-grid');
+      grid.innerHTML = GAMES.map(game => `
+        <div class="game-card" onclick="launchGame('${game.id}')">
+          <div class="game-icon">${game.icon}</div>
+          <h3 class="game-name">${game.name}</h3>
+          <p class="game-tagline">${game.tagline}</p>
+          <p class="game-description">${game.desc}</p>
+        </div>
+      `).join('');
+    }
+
+    function launchGame(gameId) {
+      console.log('Launching game:', gameId);
+      alert(`Launching ${gameId}...\n\nThis would open the full ${gameId} experience.`);
+    }
+
+    // Window controls (for Electron)
+    function minimizeWindow() {
+      if (window.electronAPI) window.electronAPI.minimize();
+    }
+
+    function maximizeWindow() {
+      if (window.electronAPI) window.electronAPI.maximize();
+    }
+
+    function closeWindow() {
+      if (window.electronAPI) window.electronAPI.close();
+    }
+
+    // Create particles
+    function createParticles() {
+      const container = document.getElementById('particles-container');
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+        particle.style.animationDelay = Math.random() * 10 + 's';
+        container.appendChild(particle);
+      }
+    }
+
+    // Initialize
+    createParticles();
+    setTimeout(updateProgress, 500);
+  </script>
+</body>
+</html>

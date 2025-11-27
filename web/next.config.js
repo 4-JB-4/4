@@ -3,14 +3,14 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // Enable static exports for USB deployment
-  output: 'export',
+  // Enable static exports for USB deployment (only in production)
+  // output: 'export', // Uncomment for USB build
 
   // Base path for USB boot
-  basePath: process.env.NODE_ENV === 'production' ? '/orb' : '',
+  basePath: '',
 
   // Asset prefix for USB
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/orb' : '',
+  assetPrefix: '',
 
   // Image optimization
   images: {

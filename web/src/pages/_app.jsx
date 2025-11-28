@@ -33,6 +33,9 @@ export default function App({ Component, pageProps }) {
         <meta name="description" content="0RB SYSTEM - The Simulation Awakens. It's not a game. It's THE game." />
         <meta name="theme-color" content="#0a0a0f" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
         <title>0RB SYSTEM</title>
       </Head>
 

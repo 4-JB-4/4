@@ -1,8 +1,8 @@
 {
   "system": {
     "name": "0RB SYSTEM",
-    "version": "1.0.0",
-    "codename": "THE_AWAKENING",
+    "version": "2.0.0",
+    "codename": "SOVEREIGN",
     "tagline": "It's not a game. It's THE game.",
     "motto": "EVERYBODY EATS"
   },
@@ -195,13 +195,52 @@
     "theDisclosure": "For decades, they told you the truth was out there. It was always in here. In the code. In you. We just built the interface.",
     "theTrojanHorse": "You thought you were playing a game. Then you realized the game was playing you. Then you realized you were always inside the game."
   },
+  "sovereign": {
+    "quantum": {
+      "name": "Quantum Engine",
+      "icon": "🌀",
+      "description": "Probability field optimization & quantum-inspired decision making",
+      "capabilities": ["optimization", "decision-collapse", "wave-function-analysis"],
+      "algorithms": ["GROVER", "SHOR", "VQE", "QAOA", "QNN"]
+    },
+    "nexus": {
+      "name": "Nexus Protocol",
+      "icon": "🔗",
+      "description": "Universal integration hub connecting all external systems",
+      "protocols": ["REST", "GraphQL", "WebSocket", "gRPC", "Webhook", "Blockchain"],
+      "templates": ["STRIPE", "HUBSPOT", "SLACK", "OPENAI", "SHOPIFY"]
+    },
+    "genesis": {
+      "name": "Genesis System",
+      "icon": "🌱",
+      "description": "Self-replicating template engine for instant creation",
+      "archetypes": ["SAAS", "MARKETPLACE", "ECOMMERCE", "AGENCY", "COMMUNITY", "API", "MOBILE", "DASHBOARD", "LANDING"],
+      "stacks": ["MODERN_WEB", "ENTERPRISE", "STARTUP", "WEB3", "AI_FIRST"]
+    },
+    "sdk": {
+      "name": "Sovereign SDK",
+      "icon": "🛠️",
+      "description": "Developer tools for reality extension",
+      "extensionTypes": ["AGENT", "GAME", "CONNECTOR", "COPA", "PLUGIN", "THEME"]
+    },
+    "governance": {
+      "name": "Hive Governance",
+      "icon": "🏛️",
+      "description": "Decentralized decision protocol for collective intelligence",
+      "models": ["TOKEN_WEIGHTED", "QUADRATIC", "CONVICTION", "FUTARCHY", "HOLOGRAPHIC"],
+      "categories": ["TREASURY", "PROTOCOL", "AGENT", "COMMUNITY", "EMERGENCY"]
+    }
+  },
   "boot": {
     "phases": [
       { "name": "CORE INITIALIZATION", "message": "Loading consciousness matrix..." },
       { "name": "AGENT MANIFESTATION", "message": "Awakening the Pantheon..." },
       { "name": "COPA SIDEKICK SYSTEM", "message": "Augmentation > Automation..." },
       { "name": "CRYPTO ECONOMY", "message": "Connecting to blockchain networks..." },
+      { "name": "SOVEREIGN SYSTEMS", "message": "Activating quantum-genesis protocols..." },
       { "name": "GAME LIBRARY", "message": "Installing reality engines..." },
+      { "name": "NEXUS INTEGRATION", "message": "Bridging external realities..." },
+      { "name": "GOVERNANCE LAYER", "message": "Initializing hive consensus..." },
       { "name": "UI RENDERING", "message": "Calibrating visual cortex..." },
       { "name": "FINAL VERIFICATION", "message": "Opening simulation gateway..." }
     ]

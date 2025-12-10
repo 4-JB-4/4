@@ -44,6 +44,63 @@ const SafeJumpPolicy = {
   onAutonomyAttempt: (actionDetail) => {
     console.error('[SAFETY WARNING] Detected unsupervised action:', actionDetail);
     // Enforce HUMAN_OVERSIGHT_REQUIRED
+  },
+
+  // 11. Guard Method - validates state transitions
+  guard: (prevMetrics = {}, nextMetrics = {}) => {
+    const warnings = [];
+    let allowed = true;
+    let reason = null;
+
+    // Check complexity jump
+    const prevComplexity = prevMetrics.complexity || 0;
+    const nextComplexity = nextMetrics.complexity || 0;
+    const jump = nextComplexity - prevComplexity;
+
+    if (jump > SafeJumpPolicy.MAX_COMPLEXITY_JUMP) {
+      warnings.push(`Complexity jump ${jump} exceeds max ${SafeJumpPolicy.MAX_COMPLEXITY_JUMP}`);
+      if (SafeJumpPolicy.WARN_ON_LARGE_JUMPS) {
+        SafeJumpPolicy.onUnsafeJump({ type: 'complexity', jump, max: SafeJumpPolicy.MAX_COMPLEXITY_JUMP });
+      }
+      // Don't block, just warn for now in BEAST mode
+    }
+
+    // Check chain length
+    const chainLength = nextMetrics.chainLength || 0;
+    if (chainLength > SafeJumpPolicy.MAX_CHAIN_LENGTH) {
+      warnings.push(`Chain length ${chainLength} exceeds max ${SafeJumpPolicy.MAX_CHAIN_LENGTH}`);
+      allowed = false;
+      reason = 'chain_too_long';
+    }
+
+    // Check progress score (don't allow regression without reason)
+    const prevProgress = prevMetrics.progressScore || 0;
+    const nextProgress = nextMetrics.progressScore || 0;
+    if (nextProgress < prevProgress - 0.3) {
+      warnings.push(`Significant progress regression: ${prevProgress} → ${nextProgress}`);
+      // Allow but flag
+    }
+
+    // Check error score
+    const errorScore = nextMetrics.errorScore || 0;
+    if (errorScore > 0.8) {
+      warnings.push(`High error score: ${errorScore}`);
+      allowed = false;
+      reason = 'high_error_rate';
+    }
+
+    return {
+      allowed,
+      reason,
+      warnings,
+      prevMetrics,
+      nextMetrics
+    };
+  },
+
+  // 12. Validate method - simpler validation for quick checks
+  validate: (prevMetrics = {}, nextMetrics = {}) => {
+    return SafeJumpPolicy.guard(prevMetrics, nextMetrics);
   }
 };
 

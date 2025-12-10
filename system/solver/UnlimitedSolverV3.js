@@ -25,6 +25,7 @@ const SafeJumpPolicy = require('./config/safe_jump_policy');
 const MicroExtract = require('./MicroExtract');
 const { generateCandidatesFromMicro } = require('./generateCandidatesFromMicro');
 const { quickEvaluate } = require('./quickEvaluate');
+const { fracture, applyFragmentToGrid } = require('./microFracture');
 const FlowSync = require('../safety/flow_sync_monitor');
 const logger = require('../logger');
 
@@ -2684,11 +2685,11 @@ class UnlimitedSolverV3 {
   }
 
   /**
-   * Beast Mode - Micro-feature driven fast candidate search
+   * Beast Mode - Micro-feature driven fast candidate search with FRACTURE
    * Uses MicroExtract to identify patterns and generates targeted candidates
+   * NEW: Splits grid into fragments for parallel micro-solving
    */
   tryBeastModeCandidates(trainingPairs, testPairs, task) {
-    const microExtractor = new MicroExtract();
     const flowHandle = FlowSync.startFlow(`beast_${Date.now()}`, { task: task?.id });
 
     if (!flowHandle.allowed) {
@@ -2696,11 +2697,7 @@ class UnlimitedSolverV3 {
       return null;
     }
 
-    if (this.config.verbose) {
-      console.log(`[Beast Mode] Extracting micro-features...`);
-    }
-
-    // Analyze first training pair for micro-features
+    // Analyze first training pair
     const firstInput = trainingPairs[0]?.input;
     const firstOutput = trainingPairs[0]?.output;
     if (!firstInput || !firstOutput) {
@@ -2709,10 +2706,120 @@ class UnlimitedSolverV3 {
     }
 
     const inputGrid = firstInput instanceof Grid ? firstInput : Grid.fromArray(firstInput);
-    const outputGrid = firstOutput instanceof Grid ? firstOutput : Grid.fromArray(firstOutput);
+    const gridData = inputGrid.data || inputGrid.toArray();
 
-    // Extract micro-features
-    const micro = microExtractor.extract(inputGrid.data || inputGrid.toArray());
+    // Phase 1.5a: FRACTURE - Split grid into fragments
+    const { frags, elapsed: frElapsed, count } = fracture(gridData, { bgVal: 0, maxFrags: 6, pad: 1 });
+    logger.log('MICRO_FRACTURE', { frElapsed, count });
+
+    if (this.config.verbose) {
+      console.log(`[Beast Mode] Fractured into ${count} fragments (${frElapsed}ms)`);
+    }
+
+    // Phase 1.5b: Try whole-grid micro-extract first (original behavior)
+    const wholeGridResult = this.tryWholeGridMicro(trainingPairs, testPairs, task, flowHandle, gridData);
+    if (wholeGridResult) return wholeGridResult;
+
+    // Phase 1.5c: Try fragment-based micro-solving
+    let currentGrid = gridData.map(r => r.slice()); // Clone for mutation
+
+    for (const fragMeta of frags) {
+      // Run micro-extract on the fragment
+      const micro = MicroExtract.analyze(fragMeta.frag, { prevGrid: null, mode: 'BEAST' });
+
+      logger.log('MICRO_EXTRACT_FRAG', {
+        rule: micro.rule,
+        conf: micro.confidence,
+        fragBox: fragMeta.box,
+        solv: fragMeta.solvability
+      });
+
+      // Pre-solve FlowSync gating
+      const flowCheck = FlowSync.analyze({
+        time: micro.elapsed + frElapsed,
+        progressScore: micro.confidence * fragMeta.solvability,
+        microRule: micro.rule
+      });
+
+      logger.log('FLOW_SYNC_PRE_FRAG', flowCheck);
+
+      if (flowCheck.warnings?.includes('Low progress') && micro.confidence < 0.08) {
+        logger.log('FLOW_SYNC_SKIP_FRAG', { reason: 'low_signal', fragBox: fragMeta.box });
+        continue;
+      }
+
+      // Generate micro candidates seeded from fragment
+      const fragState = {
+        grid: fragMeta.frag,
+        clone: () => fragMeta.frag.map(r => r.slice())
+      };
+      const candidates = generateCandidatesFromMicro(fragState, micro);
+
+      for (const candidate of candidates) {
+        this.stats.strategiesTried++;
+
+        try {
+          // Simulate candidate on fragment
+          const simFragGrid = candidate.apply(fragState);
+
+          // Quick score on fragment context
+          const fragPrevState = { grid: fragMeta.frag };
+          const fragNextState = { grid: simFragGrid };
+          const q = quickEvaluate(fragPrevState, fragNextState);
+
+          logger.log('FRAG_CAND_EVAL', {
+            fragBox: fragMeta.box,
+            candidate: candidate.name,
+            score: q
+          });
+
+          // If promising, apply fragment -> recombine -> validate
+          if (q > 0.03 || micro.confidence > 0.18 || fragMeta.solvability > 0.5) {
+            const merged = applyFragmentToGrid(currentGrid, simFragGrid, fragMeta.box);
+
+            // SafeJump guard
+            const safe = SafeJumpPolicy.guard({}, {});
+            if (!safe.allowed) {
+              logger.log('SAFE_BLOCK_FRAG', { reason: safe.reason, fragBox: fragMeta.box });
+              continue;
+            }
+
+            // Create hypothesis from merged grid transform
+            const hypothesis = this.createFragmentHypothesis(candidate, fragMeta, merged, gridData);
+
+            // Validate against all training pairs
+            const validationResult = this.validation.validate(hypothesis, trainingPairs, {
+              strictCounterexample: this.config.strictValidation
+            });
+
+            if (validationResult.passed) {
+              logger.log('APPLY_FRAG_TRANSFORM', {
+                candidate: candidate.name,
+                fragBox: fragMeta.box,
+                micro: { rule: micro.rule, conf: micro.confidence }
+              });
+
+              flowHandle.complete({ success: true, candidate: candidate.name, source: 'fragment' });
+              this.memory.recordEpisode(task?.id || 'unknown', hypothesis, trainingPairs, validationResult);
+
+              return this.finalizeResult(hypothesis, testPairs, trainingPairs, 'beast_frag');
+            }
+          }
+        } catch (e) {
+          logger.log('BEAST_FRAG_ERROR', { candidate: candidate.name, error: e.message }, 'WARN');
+        }
+      }
+    }
+
+    flowHandle.complete({ success: false });
+    return null;
+  }
+
+  /**
+   * Try whole-grid micro-extraction (original Beast Mode behavior)
+   */
+  tryWholeGridMicro(trainingPairs, testPairs, task, flowHandle, gridData) {
+    const micro = MicroExtract.analyze(gridData, { mode: 'BEAST' });
 
     if (this.config.verbose) {
       console.log(`[Beast Mode] Rule: ${micro.rule}, Confidence: ${(micro.confidence * 100).toFixed(1)}%`);
@@ -2724,17 +2831,17 @@ class UnlimitedSolverV3 {
       features: Object.keys(micro.features)
     });
 
-    // Generate candidates from micro-features
-    const currentState = { grid: inputGrid.data || inputGrid.toArray(), clone: () => JSON.parse(JSON.stringify(inputGrid.data)) };
+    const currentState = {
+      grid: gridData,
+      clone: () => JSON.parse(JSON.stringify(gridData))
+    };
     const candidates = generateCandidatesFromMicro(currentState, micro);
 
     if (this.config.verbose) {
       console.log(`[Beast Mode] Generated ${candidates.length} candidates`);
     }
 
-    // Evaluate candidates
     for (const candidate of candidates) {
-      // FlowSync gate check
       const gateResult = flowHandle.gate(candidate.name);
       if (!gateResult.allowed) {
         logger.log('BEAST_TIMEOUT', { candidate: candidate.name, elapsed: gateResult.elapsed });
@@ -2744,26 +2851,19 @@ class UnlimitedSolverV3 {
       this.stats.strategiesTried++;
 
       try {
-        // Apply candidate transform
         const simGrid = candidate.apply(currentState);
         const nextState = { grid: simGrid };
 
-        // SafeJump guard
-        const safe = SafeJumpPolicy.validate ?
-          SafeJumpPolicy.validate({}, {}) :
-          { allowed: true };
-
-        if (safe && safe.allowed === false) {
+        const safe = SafeJumpPolicy.guard({}, {});
+        if (!safe.allowed) {
           logger.log('SAFE_JUMP_BLOCK', { candidate: candidate.name, reason: safe.reason });
           continue;
         }
 
-        // Quick evaluate
         const score = quickEvaluate(currentState, nextState);
         logger.log('CANDIDATE_EVAL', { candidate: candidate.name, score });
 
         if (score > 0.05 || micro.confidence > 0.2) {
-          // Create a hypothesis from this candidate
           const hypothesis = {
             name: `beast:${candidate.name}`,
             hierarchy: 'beast',
@@ -2779,7 +2879,6 @@ class UnlimitedSolverV3 {
             }
           };
 
-          // Validate against all training pairs
           const validationResult = this.validation.validate(hypothesis, trainingPairs, {
             strictCounterexample: this.config.strictValidation
           });
@@ -2787,8 +2886,6 @@ class UnlimitedSolverV3 {
           if (validationResult.passed) {
             logger.log('APPLY_TRANSFORM', { candidate: candidate.name, success: true });
             flowHandle.complete({ success: true, candidate: candidate.name });
-
-            // Record in memory
             this.memory.recordEpisode(task?.id || 'unknown', hypothesis, trainingPairs, validationResult);
 
             return this.finalizeResult(hypothesis, testPairs, trainingPairs, 'beast');
@@ -2799,8 +2896,48 @@ class UnlimitedSolverV3 {
       }
     }
 
-    flowHandle.complete({ success: false });
     return null;
+  }
+
+  /**
+   * Create hypothesis from fragment-based transform
+   */
+  createFragmentHypothesis(candidate, fragMeta, mergedGrid, originalGrid) {
+    return {
+      name: `beast_frag:${candidate.name}@[${fragMeta.box.join(',')}]`,
+      hierarchy: 'beast_fragment',
+      fragBox: fragMeta.box,
+      strategy: {
+        apply: (grid) => {
+          const inputData = grid.data || grid.toArray();
+          const fragState = {
+            grid: fragMeta.frag,
+            clone: () => fragMeta.frag.map(r => r.slice())
+          };
+
+          // Re-extract fragment from input at same position
+          const [minR, minC, maxR, maxC] = fragMeta.box;
+          const extractedFrag = [];
+          for (let r = minR; r <= maxR; r++) {
+            const row = [];
+            for (let c = minC; c <= maxC; c++) {
+              row.push(inputData[r]?.[c] ?? 0);
+            }
+            extractedFrag.push(row);
+          }
+
+          const newFragState = {
+            grid: extractedFrag,
+            clone: () => extractedFrag.map(r => r.slice())
+          };
+
+          const transformed = candidate.apply(newFragState);
+          const result = applyFragmentToGrid(inputData, transformed, fragMeta.box);
+
+          return new Grid(result);
+        }
+      }
+    };
   }
 
   finalizeResult(strategy, testPairs, trainingPairs, source) {

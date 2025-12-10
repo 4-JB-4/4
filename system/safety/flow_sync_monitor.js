@@ -228,6 +228,51 @@ class FlowSyncMonitor {
     const gateResult = flowHandle.gate?.('check') || { allowed: true };
     return gateResult.allowed;
   }
+
+  /**
+   * Analyze flow metrics for gating decisions
+   * @param {Object} metrics - Flow metrics (time, progressScore, microRule)
+   * @returns {Object} Analysis result with elapsed, efficiency, warnings
+   */
+  analyze(metrics = {}) {
+    const elapsed = metrics.time || 0;
+    const progressScore = metrics.progressScore || 0;
+    const microRule = metrics.microRule || 'unknown';
+
+    // Calculate efficiency (progress per time unit)
+    const efficiency = elapsed > 0 ? progressScore / (elapsed / 100) : 0;
+
+    // Generate warnings
+    const warnings = [];
+
+    if (elapsed > this.options.thresholdMs * 0.8) {
+      warnings.push('Approaching timeout');
+    }
+
+    if (progressScore < 0.1 && elapsed > 50) {
+      warnings.push('Low progress');
+    }
+
+    if (microRule === 'unknown' && elapsed > 20) {
+      warnings.push('Unclassified pattern');
+    }
+
+    return {
+      elapsed,
+      efficiency: Math.round(efficiency * 100) / 100,
+      progressScore,
+      microRule,
+      warnings,
+      proceed: warnings.length === 0 || progressScore > 0.15
+    };
+  }
+
+  /**
+   * Static analyze method for singleton usage
+   */
+  static analyze(metrics = {}) {
+    return monitor.analyze(metrics);
+  }
 }
 
 // Singleton instance

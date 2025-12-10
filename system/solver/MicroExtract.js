@@ -375,6 +375,29 @@ class MicroExtract {
     }
     return total > 0 ? nonZero / total : 0;
   }
+
+  /**
+   * Static analyze method for quick extraction
+   * @param {Array<Array<number>>} grid - Input grid
+   * @param {Object} options - Analysis options
+   * @returns {Object} Extracted micro-features with timing
+   */
+  static analyze(grid, options = {}) {
+    const { performance } = require('perf_hooks');
+    const start = performance.now();
+
+    const extractor = new MicroExtract({
+      mode: options.mode || 'BEAST',
+      ...options
+    });
+
+    const result = extractor.extract(grid);
+    result.elapsed = Math.round(performance.now() - start);
+    result.mode = options.mode || 'BEAST';
+
+    return result;
+  }
 }
 
 module.exports = MicroExtract;
+module.exports.MicroExtract = MicroExtract;

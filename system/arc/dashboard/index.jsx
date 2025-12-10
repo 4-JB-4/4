@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import { createRoot } from 'react-dom/client';
 import Dashboard from './Dashboard';
 import SwarmDashboard from './SwarmDashboard';
 import SwarmDashboardMax from './SwarmDashboardMax';
+
+// Lazy load 3D dashboard (heavy Three.js bundle)
+const SwarmDashboard3D = lazy(() => import('./SwarmDashboard3D'));
 
 function App() {
     const [view, setView] = useState('metrics');
@@ -37,12 +40,23 @@ function App() {
                     icon="🌐"
                     label="Multi-Node"
                 />
+                <ViewButton
+                    active={view === '3d'}
+                    onClick={() => setView('3d')}
+                    icon="🎮"
+                    label="3D"
+                />
             </div>
 
             {/* Dashboard Views */}
             {view === 'metrics' && <Dashboard />}
             {view === 'swarm' && <SwarmDashboard />}
             {view === 'multinode' && <SwarmDashboardMax />}
+            {view === '3d' && (
+                <Suspense fallback={<LoadingScreen />}>
+                    <SwarmDashboard3D />
+                </Suspense>
+            )}
         </div>
     );
 }
@@ -68,6 +82,24 @@ function ViewButton({ active, onClick, icon, label }) {
             <span>{icon}</span>
             <span>{label}</span>
         </button>
+    );
+}
+
+function LoadingScreen() {
+    return (
+        <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
+            color: '#8b949e',
+            fontFamily: 'monospace'
+        }}>
+            <div style={{ textAlign: 'center' }}>
+                <div style={{ fontSize: 48, marginBottom: 16 }}>🧬</div>
+                <div>Loading 3D Swarm...</div>
+            </div>
+        </div>
     );
 }
 

@@ -7,6 +7,7 @@ import SwarmDashboardMax from './SwarmDashboardMax';
 // Lazy load heavy 3D dashboards (Three.js bundle)
 const SwarmDashboard3D = lazy(() => import('./SwarmDashboard3D'));
 const SwarmDashboard3DVR = lazy(() => import('./SwarmDashboard3DVR'));
+const SwarmDashboard3DVRInteract = lazy(() => import('./SwarmDashboard3DVRInteract'));
 
 function App() {
     const [view, setView] = useState('metrics');
@@ -20,10 +21,10 @@ function App() {
                 right: 16,
                 zIndex: 100,
                 display: 'flex',
-                gap: 8,
+                gap: 6,
                 fontFamily: 'monospace',
                 flexWrap: 'wrap',
-                maxWidth: 400,
+                maxWidth: 500,
                 justifyContent: 'flex-end'
             }}>
                 <ViewButton
@@ -56,6 +57,13 @@ function App() {
                     icon="🥽"
                     label="VR"
                 />
+                <ViewButton
+                    active={view === 'godmode'}
+                    onClick={() => setView('godmode')}
+                    icon="🔥"
+                    label="GODMODE"
+                    highlight={true}
+                />
             </div>
 
             {/* Dashboard Views */}
@@ -72,33 +80,45 @@ function App() {
                     <SwarmDashboard3DVR />
                 </Suspense>
             )}
+            {view === 'godmode' && (
+                <Suspense fallback={<LoadingScreen text="Loading GODMODE..." icon="🔥" />}>
+                    <SwarmDashboard3DVRInteract />
+                </Suspense>
+            )}
         </div>
     );
 }
 
-function ViewButton({ active, onClick, icon, label }) {
+function ViewButton({ active, onClick, icon, label, highlight }) {
     return (
         <button
             onClick={onClick}
             style={{
-                padding: '8px 14px',
-                border: 'none',
+                padding: '8px 12px',
+                border: highlight ? '1px solid #f0883e' : 'none',
                 borderRadius: 4,
                 cursor: 'pointer',
-                background: active ? '#238636' : '#21262d',
+                background: active
+                    ? (highlight ? '#f0883e' : '#238636')
+                    : '#21262d',
                 color: '#c9d1d9',
                 fontFamily: 'monospace',
                 transition: 'all 0.2s',
                 display: 'flex',
                 alignItems: 'center',
-                gap: 6,
-                fontSize: 13
+                gap: 5,
+                fontSize: 12,
+                boxShadow: highlight && active ? '0 0 10px #f0883e' : 'none'
             }}
             onMouseEnter={(e) => {
-                if (!active) e.target.style.background = '#30363d';
+                if (!active) {
+                    e.target.style.background = highlight ? '#da6d25' : '#30363d';
+                }
             }}
             onMouseLeave={(e) => {
-                if (!active) e.target.style.background = '#21262d';
+                if (!active) {
+                    e.target.style.background = '#21262d';
+                }
             }}
         >
             <span>{icon}</span>
@@ -107,7 +127,7 @@ function ViewButton({ active, onClick, icon, label }) {
     );
 }
 
-function LoadingScreen({ text }) {
+function LoadingScreen({ text, icon = '🧬' }) {
     return (
         <div style={{
             display: 'flex',
@@ -119,7 +139,7 @@ function LoadingScreen({ text }) {
             flexDirection: 'column'
         }}>
             <div style={{ fontSize: 64, marginBottom: 24, animation: 'pulse 2s infinite' }}>
-                🧬
+                {icon}
             </div>
             <div style={{ fontSize: 16 }}>{text}</div>
             <div style={{ marginTop: 8, fontSize: 12, color: '#484f58' }}>
@@ -128,7 +148,7 @@ function LoadingScreen({ text }) {
             <style>{`
                 @keyframes pulse {
                     0%, 100% { transform: scale(1); opacity: 1; }
-                    50% { transform: scale(1.1); opacity: 0.7; }
+                    50% { transform: scale(1.15); opacity: 0.7; }
                 }
             `}</style>
         </div>

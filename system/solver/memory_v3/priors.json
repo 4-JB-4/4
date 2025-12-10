@@ -10,5 +10,9 @@
   "spatial": {
     "count": 1,
     "successRate": 1
+  },
+  "composite": {
+    "count": 1,
+    "successRate": 1
   }
 }

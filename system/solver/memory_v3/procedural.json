@@ -52,5 +52,11 @@
     "hierarchy": "color",
     "count": 1,
     "lastUsed": 1765355037878
+  },
+  {
+    "chain": "structural:flipVertical->spatial:gravityLeft",
+    "hierarchy": "composite",
+    "count": 1,
+    "lastUsed": 1765356156823
   }
 ]

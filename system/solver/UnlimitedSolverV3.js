@@ -2743,7 +2743,7 @@ class UnlimitedSolverV3 {
 
       logger.log('FLOW_SYNC_PRE_FRAG', flowCheck);
 
-      if (flowCheck.warnings?.includes('Low progress') && micro.confidence < 0.08) {
+      if (flowCheck.warnings?.includes('Low progress') && micro.confidence < 0.04) {
         logger.log('FLOW_SYNC_SKIP_FRAG', { reason: 'low_signal', fragBox: fragMeta.box });
         continue;
       }
@@ -2774,7 +2774,7 @@ class UnlimitedSolverV3 {
           });
 
           // If promising, apply fragment -> recombine -> validate
-          if (q > 0.03 || micro.confidence > 0.18 || fragMeta.solvability > 0.5) {
+          if (q > 0.01 || micro.confidence > 0.25 || fragMeta.solvability > 0.5) {
             const merged = applyFragmentToGrid(currentGrid, simFragGrid, fragMeta.box);
 
             // SafeJump guard
@@ -2863,7 +2863,7 @@ class UnlimitedSolverV3 {
         const score = quickEvaluate(currentState, nextState);
         logger.log('CANDIDATE_EVAL', { candidate: candidate.name, score });
 
-        if (score > 0.05 || micro.confidence > 0.2) {
+        if (score > 0.01 || micro.confidence > 0.25) {
           const hypothesis = {
             name: `beast:${candidate.name}`,
             hierarchy: 'beast',

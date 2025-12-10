@@ -13,5 +13,10 @@
     "count": 1,
     "successRate": 1,
     "avgComplexity": 0
+  },
+  "composite": {
+    "count": 1,
+    "successRate": 1,
+    "avgComplexity": 0
   }
 }

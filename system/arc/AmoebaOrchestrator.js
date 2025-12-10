@@ -49,6 +49,66 @@ class AmoebaOrchestrator {
     // Evolution parameters
     this.generation = 0;
     this.evolutionRate = config.evolutionRate || 0.1;
+
+    // Per-phase parameter history for adaptive tuning
+    this.phaseHistory = {};
+    for (const phase of this.phases) {
+      this.phaseHistory[phase] = { runs: 0, successes: 0, avgScore: 0.5 };
+    }
+  }
+
+  /**
+   * Adapt a parameter based on phase-specific feedback history
+   * @param {string} param - Parameter name (e.g., 'branchFactor')
+   * @param {number} baseValue - Default base value
+   * @param {string} phase - Current phase name
+   * @returns {number} - Adapted parameter value
+   */
+  adaptParameter(param, baseValue, phase) {
+    const history = this.phaseHistory[phase] || { runs: 0, successes: 0, avgScore: 0.5 };
+
+    // No history yet - use base
+    if (history.runs < 2) {
+      return baseValue;
+    }
+
+    const successRate = history.runs > 0 ? history.successes / history.runs : 0;
+
+    switch (param) {
+      case 'branchFactor': {
+        // Low success rate → more branches
+        // High success rate → fewer branches (efficiency)
+        if (successRate < 0.2) {
+          return Math.min(this.maxBranches, baseValue + 2);
+        } else if (successRate > 0.7) {
+          return Math.max(1, baseValue - 1);
+        }
+        // Medium performance - slight adjustment based on avgScore
+        if (history.avgScore < 0.3) {
+          return Math.min(this.maxBranches, baseValue + 1);
+        }
+        return baseValue;
+      }
+
+      case 'beamWidth': {
+        // Scale beam width inversely with success
+        if (successRate < 0.3) {
+          return Math.min(50, baseValue * 1.5);
+        }
+        return baseValue;
+      }
+
+      case 'maxDepth': {
+        // Increase depth for struggling phases
+        if (history.avgScore < 0.2) {
+          return Math.min(12, baseValue + 2);
+        }
+        return baseValue;
+      }
+
+      default:
+        return baseValue;
+    }
   }
 
   /**
@@ -87,9 +147,12 @@ class AmoebaOrchestrator {
 
       const nextInputs = [];
 
+      // Adapt branchFactor for this phase based on history
+      const adaptedBranchFactor = this.adaptParameter('branchFactor', this.branchFactor, phase);
+
       for (const inp of currentInputs) {
-        // Spawn branches up to maxBranches
-        const branches = Math.min(this.maxBranches, this.branchFactor);
+        // Spawn branches using adapted factor
+        const branches = Math.min(this.maxBranches, adaptedBranchFactor);
 
         for (let i = 0; i < branches; i++) {
           this.stats.totalBranches++;
@@ -153,7 +216,7 @@ class AmoebaOrchestrator {
       }
 
       currentInputs = nextInputs.length > 0 ? nextInputs : currentInputs;
-      this.collectFeedback(currentInputs);
+      this.collectFeedback(currentInputs, phase);
 
       // Broadcast phase completion
       broadcastProgress({
@@ -261,13 +324,24 @@ class AmoebaOrchestrator {
   /**
    * Collect feedback and potentially evolve configuration
    * @param {Array} results - Results from current phase
+   * @param {string} phase - Current phase name
    */
-  collectFeedback(results) {
+  collectFeedback(results, phase) {
     this.feedback.push(...results);
 
     // Analyze and evolve
     const avgScore = results.reduce((s, r) => s + (r.score || 0), 0) / results.length;
     const prevBranchFactor = this.branchFactor;
+
+    // Update per-phase history for adaptive tuning
+    if (phase && this.phaseHistory[phase]) {
+      const hasWin = results.some(r => r.status === 'win');
+      this.phaseHistory[phase].runs++;
+      if (hasWin) this.phaseHistory[phase].successes++;
+      // Exponential moving average for score
+      this.phaseHistory[phase].avgScore =
+        0.7 * this.phaseHistory[phase].avgScore + 0.3 * avgScore;
+    }
 
     if (this.verbose) {
       console.log(`📈 Feedback: ${results.length} entries, avg score: ${avgScore.toFixed(3)}`);

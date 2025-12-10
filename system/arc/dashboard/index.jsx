@@ -4,8 +4,9 @@ import Dashboard from './Dashboard';
 import SwarmDashboard from './SwarmDashboard';
 import SwarmDashboardMax from './SwarmDashboardMax';
 
-// Lazy load 3D dashboard (heavy Three.js bundle)
+// Lazy load heavy 3D dashboards (Three.js bundle)
 const SwarmDashboard3D = lazy(() => import('./SwarmDashboard3D'));
+const SwarmDashboard3DVR = lazy(() => import('./SwarmDashboard3DVR'));
 
 function App() {
     const [view, setView] = useState('metrics');
@@ -20,7 +21,10 @@ function App() {
                 zIndex: 100,
                 display: 'flex',
                 gap: 8,
-                fontFamily: 'monospace'
+                fontFamily: 'monospace',
+                flexWrap: 'wrap',
+                maxWidth: 400,
+                justifyContent: 'flex-end'
             }}>
                 <ViewButton
                     active={view === 'metrics'}
@@ -46,6 +50,12 @@ function App() {
                     icon="🎮"
                     label="3D"
                 />
+                <ViewButton
+                    active={view === 'vr'}
+                    onClick={() => setView('vr')}
+                    icon="🥽"
+                    label="VR"
+                />
             </div>
 
             {/* Dashboard Views */}
@@ -53,8 +63,13 @@ function App() {
             {view === 'swarm' && <SwarmDashboard />}
             {view === 'multinode' && <SwarmDashboardMax />}
             {view === '3d' && (
-                <Suspense fallback={<LoadingScreen />}>
+                <Suspense fallback={<LoadingScreen text="Loading 3D Swarm..." />}>
                     <SwarmDashboard3D />
+                </Suspense>
+            )}
+            {view === 'vr' && (
+                <Suspense fallback={<LoadingScreen text="Loading VR Swarm..." />}>
+                    <SwarmDashboard3DVR />
                 </Suspense>
             )}
         </div>
@@ -66,17 +81,24 @@ function ViewButton({ active, onClick, icon, label }) {
         <button
             onClick={onClick}
             style={{
-                padding: '8px 16px',
+                padding: '8px 14px',
                 border: 'none',
                 borderRadius: 4,
                 cursor: 'pointer',
                 background: active ? '#238636' : '#21262d',
                 color: '#c9d1d9',
                 fontFamily: 'monospace',
-                transition: 'background 0.2s',
+                transition: 'all 0.2s',
                 display: 'flex',
                 alignItems: 'center',
-                gap: 6
+                gap: 6,
+                fontSize: 13
+            }}
+            onMouseEnter={(e) => {
+                if (!active) e.target.style.background = '#30363d';
+            }}
+            onMouseLeave={(e) => {
+                if (!active) e.target.style.background = '#21262d';
             }}
         >
             <span>{icon}</span>
@@ -85,7 +107,7 @@ function ViewButton({ active, onClick, icon, label }) {
     );
 }
 
-function LoadingScreen() {
+function LoadingScreen({ text }) {
     return (
         <div style={{
             display: 'flex',
@@ -93,12 +115,22 @@ function LoadingScreen() {
             justifyContent: 'center',
             height: '100vh',
             color: '#8b949e',
-            fontFamily: 'monospace'
+            fontFamily: 'monospace',
+            flexDirection: 'column'
         }}>
-            <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: 48, marginBottom: 16 }}>🧬</div>
-                <div>Loading 3D Swarm...</div>
+            <div style={{ fontSize: 64, marginBottom: 24, animation: 'pulse 2s infinite' }}>
+                🧬
             </div>
+            <div style={{ fontSize: 16 }}>{text}</div>
+            <div style={{ marginTop: 8, fontSize: 12, color: '#484f58' }}>
+                Loading Three.js and WebGL assets...
+            </div>
+            <style>{`
+                @keyframes pulse {
+                    0%, 100% { transform: scale(1); opacity: 1; }
+                    50% { transform: scale(1.1); opacity: 0.7; }
+                }
+            `}</style>
         </div>
     );
 }

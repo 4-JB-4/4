@@ -21,6 +21,13 @@ const path = require('path');
 // Import safety policy
 const SafeJumpPolicy = require('./config/safe_jump_policy');
 
+// Beast Mode imports
+const MicroExtract = require('./MicroExtract');
+const { generateCandidatesFromMicro } = require('./generateCandidatesFromMicro');
+const { quickEvaluate } = require('./quickEvaluate');
+const FlowSync = require('../safety/flow_sync_monitor');
+const logger = require('../logger');
+
 const SOLVER_VERSION = '3.0.0';
 const CODENAME = 'META_HORIZON';
 
@@ -2526,6 +2533,12 @@ class UnlimitedSolverV3 {
       return this.finalizeResult(memoryStrategy, testPairs, trainingPairs, 'memory');
     }
 
+    // Phase 1.5: Beast Mode - Micro-feature driven fast candidates
+    const beastResult = this.tryBeastModeCandidates(trainingPairs, testPairs, task);
+    if (beastResult) {
+      return beastResult;
+    }
+
     // Phase 2: Multi-dimensional search
     for (let totalComplexity = 7; totalComplexity <= this.config.maxComplexity; totalComplexity++) {
       if (this.config.verbose && totalComplexity % 7 === 0) {
@@ -2667,6 +2680,126 @@ class UnlimitedSolverV3 {
       }
     }
 
+    return null;
+  }
+
+  /**
+   * Beast Mode - Micro-feature driven fast candidate search
+   * Uses MicroExtract to identify patterns and generates targeted candidates
+   */
+  tryBeastModeCandidates(trainingPairs, testPairs, task) {
+    const microExtractor = new MicroExtract();
+    const flowHandle = FlowSync.startFlow(`beast_${Date.now()}`, { task: task?.id });
+
+    if (!flowHandle.allowed) {
+      logger.log('BEAST_BLOCKED', { reason: flowHandle.reason });
+      return null;
+    }
+
+    if (this.config.verbose) {
+      console.log(`[Beast Mode] Extracting micro-features...`);
+    }
+
+    // Analyze first training pair for micro-features
+    const firstInput = trainingPairs[0]?.input;
+    const firstOutput = trainingPairs[0]?.output;
+    if (!firstInput || !firstOutput) {
+      flowHandle.complete({ success: false });
+      return null;
+    }
+
+    const inputGrid = firstInput instanceof Grid ? firstInput : Grid.fromArray(firstInput);
+    const outputGrid = firstOutput instanceof Grid ? firstOutput : Grid.fromArray(firstOutput);
+
+    // Extract micro-features
+    const micro = microExtractor.extract(inputGrid.data || inputGrid.toArray());
+
+    if (this.config.verbose) {
+      console.log(`[Beast Mode] Rule: ${micro.rule}, Confidence: ${(micro.confidence * 100).toFixed(1)}%`);
+    }
+
+    logger.log('MICRO_EXTRACT', {
+      rule: micro.rule,
+      confidence: micro.confidence,
+      features: Object.keys(micro.features)
+    });
+
+    // Generate candidates from micro-features
+    const currentState = { grid: inputGrid.data || inputGrid.toArray(), clone: () => JSON.parse(JSON.stringify(inputGrid.data)) };
+    const candidates = generateCandidatesFromMicro(currentState, micro);
+
+    if (this.config.verbose) {
+      console.log(`[Beast Mode] Generated ${candidates.length} candidates`);
+    }
+
+    // Evaluate candidates
+    for (const candidate of candidates) {
+      // FlowSync gate check
+      const gateResult = flowHandle.gate(candidate.name);
+      if (!gateResult.allowed) {
+        logger.log('BEAST_TIMEOUT', { candidate: candidate.name, elapsed: gateResult.elapsed });
+        break;
+      }
+
+      this.stats.strategiesTried++;
+
+      try {
+        // Apply candidate transform
+        const simGrid = candidate.apply(currentState);
+        const nextState = { grid: simGrid };
+
+        // SafeJump guard
+        const safe = SafeJumpPolicy.validate ?
+          SafeJumpPolicy.validate({}, {}) :
+          { allowed: true };
+
+        if (safe && safe.allowed === false) {
+          logger.log('SAFE_JUMP_BLOCK', { candidate: candidate.name, reason: safe.reason });
+          continue;
+        }
+
+        // Quick evaluate
+        const score = quickEvaluate(currentState, nextState);
+        logger.log('CANDIDATE_EVAL', { candidate: candidate.name, score });
+
+        if (score > 0.05 || micro.confidence > 0.2) {
+          // Create a hypothesis from this candidate
+          const hypothesis = {
+            name: `beast:${candidate.name}`,
+            hierarchy: 'beast',
+            strategy: {
+              apply: (grid) => {
+                const state = {
+                  grid: grid.data || grid.toArray(),
+                  clone: () => JSON.parse(JSON.stringify(grid.data || grid.toArray()))
+                };
+                const result = candidate.apply(state);
+                return new Grid(result);
+              }
+            }
+          };
+
+          // Validate against all training pairs
+          const validationResult = this.validation.validate(hypothesis, trainingPairs, {
+            strictCounterexample: this.config.strictValidation
+          });
+
+          if (validationResult.passed) {
+            logger.log('APPLY_TRANSFORM', { candidate: candidate.name, success: true });
+            flowHandle.complete({ success: true, candidate: candidate.name });
+
+            // Record in memory
+            this.memory.recordEpisode(task?.id || 'unknown', hypothesis, trainingPairs, validationResult);
+
+            return this.finalizeResult(hypothesis, testPairs, trainingPairs, 'beast');
+          }
+        }
+      } catch (e) {
+        logger.log('BEAST_ERROR', { candidate: candidate.name, error: e.message }, 'WARN');
+      }
+    }
+
+    flowHandle.complete({ success: false });
     return null;
   }
 

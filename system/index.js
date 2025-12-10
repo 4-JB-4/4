@@ -58,6 +58,20 @@ const {
   CODENAME: SOLVER_CODENAME
 } = require('./solver/UnlimitedSolver');
 
+// Unlimited Solver v3 - Meta Horizon Engine
+const {
+  UnlimitedSolverV3,
+  ComplexityVector,
+  HypothesisOntology,
+  ValidationPipeline,
+  CognitiveMemory,
+  ChainExecutor,
+  ExplainabilityEngine,
+  SafetyBoundary,
+  VERSION: SOLVER_V3_VERSION,
+  CODENAME: SOLVER_V3_CODENAME
+} = require('./solver/UnlimitedSolverV3');
+
 // ═══════════════════════════════════════════════════════════════════
 // SOVEREIGN SYSTEMS (NEW)
 // ═══════════════════════════════════════════════════════════════════
@@ -421,5 +435,19 @@ module.exports = {
     scoreStrategyOnTraining,
     VERSION: SOLVER_VERSION,
     CODENAME: SOLVER_CODENAME
+  },
+
+  // Unlimited Solver v3 - Meta Horizon Engine
+  SolverV3: {
+    UnlimitedSolverV3,
+    ComplexityVector,
+    HypothesisOntology,
+    ValidationPipeline,
+    CognitiveMemory,
+    ChainExecutor,
+    ExplainabilityEngine,
+    SafetyBoundary,
+    VERSION: SOLVER_V3_VERSION,
+    CODENAME: SOLVER_V3_CODENAME
   }
 };

@@ -1,0 +1,17 @@
+{
+  "spatial": {
+    "count": 1,
+    "successRate": 1,
+    "avgComplexity": 0
+  },
+  "color": {
+    "count": 1,
+    "successRate": 1,
+    "avgComplexity": 0
+  },
+  "structural": {
+    "count": 3,
+    "successRate": 1,
+    "avgComplexity": 0
+  }
+}

@@ -1,0 +1,8726 @@
+[
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541606
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541616
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541626
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541638
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541649
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541657
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541667
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541675
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541684
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541693
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541703
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541712
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541720
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541729
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541737
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541745
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541753
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541766
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541776
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541784
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541793
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541801
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541810
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541818
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541828
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541837
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541846
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541853
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541862
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541871
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541881
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541893
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541902
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541911
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541920
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541929
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541938
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541947
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541956
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541965
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541976
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541986
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341541995
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542004
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542016
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542027
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542037
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542047
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542058
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542068
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542078
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542086
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542096
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542105
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542114
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542124
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542137
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542146
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542155
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542164
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542174
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542183
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542193
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542202
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542211
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542220
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542229
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542238
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542251
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542260
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542270
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542280
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542289
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542299
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542310
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542321
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542331
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542341
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542353
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542362
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542375
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542384
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542394
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542404
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542415
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542425
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542434
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542442
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542451
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542459
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542468
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542477
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542490
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542499
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542509
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542518
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542527
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542536
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542545
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542553
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542562
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542570
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542578
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542588
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542601
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542610
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542620
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542630
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542640
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542649
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542659
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542668
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542678
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542687
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542699
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542709
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542723
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542732
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542741
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542750
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542761
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542770
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542779
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542790
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542799
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542808
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542817
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542825
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542837
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542846
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542855
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542864
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542873
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542881
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542891
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542900
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542909
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542918
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542928
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542936
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542949
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542958
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542967
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542976
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542986
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341542994
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543003
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543011
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543020
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543032
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543041
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543051
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543064
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543074
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543083
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543092
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543101
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543111
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543120
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543129
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543138
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543146
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543155
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543168
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543177
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543185
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543195
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543207
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543220
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543229
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543240
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543253
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543263
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543272
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543282
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543293
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543302
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543311
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543320
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543329
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543339
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543347
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543357
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543365
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543374
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543383
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543395
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543403
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543412
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543421
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543429
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543437
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543447
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543456
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543464
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543473
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543481
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543493
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543502
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543511
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543520
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543529
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543538
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543546
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543555
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543564
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543573
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543581
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543593
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543601
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543611
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543619
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543629
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543638
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543648
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543657
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543666
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543676
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543687
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543700
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543710
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543720
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543729
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543738
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543748
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543758
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543767
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543775
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543785
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543794
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543807
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543817
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543827
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543836
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543845
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543853
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543863
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543872
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543882
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543890
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543901
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543914
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543924
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543933
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543944
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543953
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543963
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543972
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543982
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341543991
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544001
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544012
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544024
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544033
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544042
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544052
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544062
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544071
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544081
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544091
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544100
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544108
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544116
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544128
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544137
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544146
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544156
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544166
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544176
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544184
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544192
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544202
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544211
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544219
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544231
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544240
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544250
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544259
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544268
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544276
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544284
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544293
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544303
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544311
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544320
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544332
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544342
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544351
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544362
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544374
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544383
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544397
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544407
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544417
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544427
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544439
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544450
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544462
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544472
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544481
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544490
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544500
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544510
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544519
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544530
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544540
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544550
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544563
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544573
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544582
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544592
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544602
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544611
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544621
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544633
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544642
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544654
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544665
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544679
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544688
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544697
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544707
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544717
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544727
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544737
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544746
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544755
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544765
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544776
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544789
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544799
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544808
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544818
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544827
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544837
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544847
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544857
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544866
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544876
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544885
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544898
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544907
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544916
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544925
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544935
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544944
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544955
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544964
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544973
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544982
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341544992
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545004
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545014
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545024
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545035
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545047
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545057
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545067
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545077
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545086
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545096
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545108
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545118
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545127
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545138
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545148
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545159
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545168
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545178
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545187
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545198
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545207
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545220
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545229
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545238
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545248
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545258
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545266
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545275
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545284
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545293
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545301
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545313
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545321
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545331
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545340
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545349
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545358
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545367
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545375
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545385
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545393
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545402
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545413
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545422
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545431
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545441
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545449
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545458
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545467
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545477
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545485
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545495
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545506
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545514
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545523
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545533
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545543
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545553
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545562
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545570
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545579
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545589
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545600
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545610
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545621
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545631
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545640
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545650
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545659
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545671
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545680
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545689
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545702
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545711
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545720
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545729
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545738
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545747
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545757
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545766
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545775
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545786
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545799
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545809
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545818
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545829
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545838
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545848
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545856
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545866
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545875
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545884
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545896
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545906
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545915
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545924
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545932
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545942
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545951
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545960
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545971
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545980
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341545991
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546001
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546010
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546019
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546028
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546038
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546048
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546056
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546065
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546075
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546086
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546095
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546105
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546114
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546123
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546132
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546141
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546150
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546159
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546168
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546179
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546188
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546196
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546205
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546214
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546223
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546232
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546242
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546254
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546264
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546280
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546290
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546300
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546310
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546319
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546329
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546340
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546350
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546361
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546371
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546382
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546392
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546402
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546410
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546419
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546428
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546437
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546446
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546455
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546465
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546477
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546486
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546494
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546506
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546517
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546527
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546535
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546544
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546553
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546564
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546575
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546586
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546597
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546609
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546617
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546628
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546639
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546648
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546657
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546666
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546675
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546684
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546694
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546702
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546713
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546724
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546732
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546741
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546750
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546761
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546770
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546779
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546788
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546798
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546807
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546817
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546828
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546838
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546847
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546858
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546867
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546877
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546886
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546899
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546908
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546918
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546927
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546939
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546949
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546958
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546969
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546979
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546989
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341546998
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547008
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547019
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547028
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547040
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547050
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547061
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547073
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547083
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547091
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547104
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547113
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547122
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547131
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547141
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547155
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547166
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547174
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547187
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547196
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547206
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547215
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547225
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547233
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547244
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547255
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547266
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547276
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547286
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547297
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547308
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547317
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547327
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547338
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547349
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547362
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547372
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547382
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547393
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547403
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547413
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547423
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547433
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547443
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547453
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547465
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547475
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547485
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547495
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547504
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547514
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547524
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547534
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547544
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547554
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547568
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547578
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547587
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547597
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547608
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547619
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547629
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547640
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547649
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547659
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547672
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547681
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547691
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547702
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547712
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547722
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547732
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547742
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547751
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547762
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547775
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547786
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547796
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547806
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547816
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547826
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547835
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547845
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547854
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547864
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547876
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547887
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547897
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547907
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547918
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547928
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547938
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547948
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547958
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547969
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547981
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341547991
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548001
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548012
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548022
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548032
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548041
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548053
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548062
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548072
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548084
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548095
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548104
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548115
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548124
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548135
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548144
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548155
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548165
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548175
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548188
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548198
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548207
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548218
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548227
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548237
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548247
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548258
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548268
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548279
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548291
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548302
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548311
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548323
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548332
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548342
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548352
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548362
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548373
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548384
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548396
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548406
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548415
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548425
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548435
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548445
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548455
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548466
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548477
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548486
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548499
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548510
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548520
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548530
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548539
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548550
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548560
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548570
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548579
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548589
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548605
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548616
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548626
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548636
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548647
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548661
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548671
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548682
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548692
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548702
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548714
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548724
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548734
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:ratioScaling",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548745
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "border:borderReconstruction",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765341548754
+  },
+  {
+    "taskId": "unknown",
+    "strategy": "counting:cardinalityMapping",
+    "inputFeatures": {
+      "rows": 2,
+      "cols": 2,
+      "uniqueColors": 2,
+      "objectCount": 2,
+      "density": 0.5
+    },
+    "timestamp": 1765341609192
+  }
+]

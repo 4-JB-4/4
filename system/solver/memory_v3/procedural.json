@@ -1,0 +1,32 @@
+[
+  {
+    "chain": "spatial:gravityDown",
+    "hierarchy": "spatial",
+    "count": 1,
+    "lastUsed": 1765341523016
+  },
+  {
+    "chain": "color:replace1to2",
+    "hierarchy": "color",
+    "count": 1,
+    "lastUsed": 1765341609207
+  },
+  {
+    "chain": "structural:flipHorizontal",
+    "hierarchy": "structural",
+    "count": 1,
+    "lastUsed": 1765341609237
+  },
+  {
+    "chain": "structural:rotate90",
+    "hierarchy": "structural",
+    "count": 1,
+    "lastUsed": 1765341609275
+  },
+  {
+    "chain": "structural:scale2x",
+    "hierarchy": "structural",
+    "count": 1,
+    "lastUsed": 1765341609297
+  }
+]

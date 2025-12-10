@@ -18,6 +18,9 @@
 const fs = require('fs');
 const path = require('path');
 
+// Import safety policy
+const SafeJumpPolicy = require('./config/safe_jump_policy');
+
 const SOLVER_VERSION = '3.0.0';
 const CODENAME = 'META_HORIZON';
 
@@ -2190,11 +2193,19 @@ class ExplainabilityEngine {
 
 class SafetyBoundary {
   constructor(config = {}) {
+    // Merge with SafeJumpPolicy
+    this.policy = SafeJumpPolicy;
+
     this.config = {
       maxIterations: config.maxIterations || 1000000,
       maxTimeMs: config.maxTimeMs || 300000, // 5 minutes
       maxMemoryMB: config.maxMemoryMB || 512,
       maxGridSize: config.maxGridSize || 100,
+      maxChainLength: this.policy.MAX_CHAIN_LENGTH,
+      maxComplexityJump: this.policy.MAX_COMPLEXITY_JUMP,
+      maxStrategiesPerGen: this.policy.MAX_STRATEGIES_PER_GENERATION,
+      validationBudgetMs: this.policy.VALIDATION_TIME_BUDGET_MS,
+      humanOversightRequired: this.policy.HUMAN_OVERSIGHT_REQUIRED,
       allowFileSystem: config.allowFileSystem !== false,
       allowNetwork: config.allowNetwork || false,
       ...config
@@ -2203,8 +2214,89 @@ class SafetyBoundary {
     this.stats = {
       iterations: 0,
       startTime: null,
-      peakMemory: 0
+      peakMemory: 0,
+      largeJumps: 0,
+      chainLengthWarnings: 0
     };
+
+    this.flowSyncMonitor = this.policy.ENABLE_FLOW_SYNC_MONITOR ? [] : null;
+  }
+
+  /**
+   * Validate complexity vector jump
+   */
+  validateComplexityJump(prevVector, newVector) {
+    if (!prevVector || !newVector) return true;
+
+    const prev = prevVector.toArray ? prevVector.toArray() : Object.values(prevVector.dimensions || prevVector);
+    const next = newVector.toArray ? newVector.toArray() : Object.values(newVector.dimensions || newVector);
+
+    for (let i = 0; i < prev.length; i++) {
+      const jump = (next[i] || 1) - (prev[i] || 1);
+      if (jump > this.config.maxComplexityJump) {
+        if (this.policy.WARN_ON_LARGE_JUMPS) {
+          this.stats.largeJumps++;
+          this.policy.onUnsafeJump({
+            axis: i,
+            jump,
+            max: this.config.maxComplexityJump,
+            prevVector: prev,
+            newVector: next
+          });
+        }
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Validate chain length
+   */
+  validateChainLength(chain) {
+    const length = Array.isArray(chain) ? chain.length : 1;
+    if (length > this.config.maxChainLength) {
+      this.stats.chainLengthWarnings++;
+      if (this.policy.LOG_LEVEL === 'verbose') {
+        console.warn(`[SAFETY] Chain length ${length} exceeds max ${this.config.maxChainLength}`);
+      }
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * Record flow sync timing for bottleneck detection
+   */
+  recordFlowSync(stepName, durationMs) {
+    if (!this.flowSyncMonitor) return;
+
+    this.flowSyncMonitor.push({ step: stepName, duration: durationMs, timestamp: Date.now() });
+
+    if (durationMs > this.policy.FLOW_SYNC_THRESHOLD_MS) {
+      console.warn(`[FLOW SYNC] Bottleneck detected: ${stepName} took ${durationMs}ms`);
+    }
+  }
+
+  /**
+   * Ensure human oversight is active
+   */
+  requireOversight(action) {
+    if (this.config.humanOversightRequired && !this._humanStarted) {
+      this.policy.onAutonomyAttempt({ action, timestamp: Date.now() });
+      throw new SafetyError('OVERSIGHT_REQUIRED', 'Human oversight required to start execution');
+    }
+  }
+
+  /**
+   * Mark that human has initiated execution
+   */
+  humanStart() {
+    this._humanStarted = true;
+  }
+
+  humanStop() {
+    this._humanStarted = false;
   }
 
   start() {
@@ -2513,6 +2605,9 @@ module.exports = {
   ExplainabilityEngine,
   SafetyBoundary,
   SafetyError,
+
+  // Safety Policy
+  SafeJumpPolicy,
 
   // Re-export Grid from v2
   Grid,

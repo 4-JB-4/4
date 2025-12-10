@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import Dashboard from './Dashboard';
 import SwarmDashboard from './SwarmDashboard';
+import SwarmDashboardMax from './SwarmDashboardMax';
 
 function App() {
     const [view, setView] = useState('metrics');
@@ -18,39 +19,55 @@ function App() {
                 gap: 8,
                 fontFamily: 'monospace'
             }}>
-                <button
+                <ViewButton
+                    active={view === 'metrics'}
                     onClick={() => setView('metrics')}
-                    style={{
-                        padding: '8px 16px',
-                        border: 'none',
-                        borderRadius: 4,
-                        cursor: 'pointer',
-                        background: view === 'metrics' ? '#238636' : '#21262d',
-                        color: '#c9d1d9',
-                        fontFamily: 'monospace'
-                    }}
-                >
-                    📊 Metrics
-                </button>
-                <button
+                    icon="📊"
+                    label="Metrics"
+                />
+                <ViewButton
+                    active={view === 'swarm'}
                     onClick={() => setView('swarm')}
-                    style={{
-                        padding: '8px 16px',
-                        border: 'none',
-                        borderRadius: 4,
-                        cursor: 'pointer',
-                        background: view === 'swarm' ? '#238636' : '#21262d',
-                        color: '#c9d1d9',
-                        fontFamily: 'monospace'
-                    }}
-                >
-                    🧬 Swarm
-                </button>
+                    icon="🧬"
+                    label="Swarm"
+                />
+                <ViewButton
+                    active={view === 'multinode'}
+                    onClick={() => setView('multinode')}
+                    icon="🌐"
+                    label="Multi-Node"
+                />
             </div>
 
             {/* Dashboard Views */}
-            {view === 'metrics' ? <Dashboard /> : <SwarmDashboard />}
+            {view === 'metrics' && <Dashboard />}
+            {view === 'swarm' && <SwarmDashboard />}
+            {view === 'multinode' && <SwarmDashboardMax />}
         </div>
+    );
+}
+
+function ViewButton({ active, onClick, icon, label }) {
+    return (
+        <button
+            onClick={onClick}
+            style={{
+                padding: '8px 16px',
+                border: 'none',
+                borderRadius: 4,
+                cursor: 'pointer',
+                background: active ? '#238636' : '#21262d',
+                color: '#c9d1d9',
+                fontFamily: 'monospace',
+                transition: 'background 0.2s',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 6
+            }}
+        >
+            <span>{icon}</span>
+            <span>{label}</span>
+        </button>
     );
 }
 

@@ -1,6 +1,6 @@
 {
   "hypothesis": {
-    "count": 3,
+    "count": 4,
     "successRate": 1
   },
   "flip": {
@@ -16,7 +16,7 @@
     "successRate": 1
   },
   "colorPair": {
-    "count": 1,
+    "count": 2,
     "successRate": 1
   }
 }

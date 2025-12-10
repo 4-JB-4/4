@@ -28,5 +28,35 @@
     "hierarchy": "structural",
     "count": 1,
     "lastUsed": 1765341609297
+  },
+  {
+    "chain": "structural:rotate270",
+    "hierarchy": "structural",
+    "count": 1,
+    "lastUsed": 1765351402964
+  },
+  {
+    "chain": "spatial:borderFillWith2",
+    "hierarchy": "spatial",
+    "count": 1,
+    "lastUsed": 1765351712283
+  },
+  {
+    "chain": "structural:scale4x",
+    "hierarchy": "structural",
+    "count": 1,
+    "lastUsed": 1765351712458
+  },
+  {
+    "chain": "color:multiMap1to3_2to4",
+    "hierarchy": "color",
+    "count": 1,
+    "lastUsed": 1765351726294
+  },
+  {
+    "chain": "structural:flipVertical->spatial:gravityLeft",
+    "hierarchy": "composite",
+    "count": 1,
+    "lastUsed": 1765351819582
   }
 ]

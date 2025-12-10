@@ -156,6 +156,10 @@ class HypothesisOntology {
           name: 'Scale 3x',
           apply: (grid) => this.scale(grid, 3)
         },
+        scale4x: {
+          name: 'Scale 4x',
+          apply: (grid) => this.scale(grid, 4)
+        },
         // Original structural transforms
         regionSegmentation: {
           name: 'Region Segmentation',
@@ -222,6 +226,18 @@ class HypothesisOntology {
         relativeDisplacement: {
           name: 'Relative Displacement',
           apply: (grid) => this.inferRelativeDisplacement(grid)
+        },
+        borderFillWith2: {
+          name: 'Fill Border with 2',
+          apply: (grid) => this.fillBorderCells(grid, 2)
+        },
+        borderFillWith1: {
+          name: 'Fill Border with 1',
+          apply: (grid) => this.fillBorderCells(grid, 1)
+        },
+        borderFillWith3: {
+          name: 'Fill Border with 3',
+          apply: (grid) => this.fillBorderCells(grid, 3)
         }
       },
 
@@ -283,6 +299,23 @@ class HypothesisOntology {
         replace3to2: {
           name: 'Replace 3 to 2',
           apply: (grid) => this.replaceColor(grid, 3, 2)
+        },
+        // Multi-color parallel mappings
+        multiMap1to3_2to4: {
+          name: 'Multi-Map {1→3, 2→4}',
+          apply: (grid) => this.multiColorMap(grid, { 1: 3, 2: 4 })
+        },
+        multiMap1to2_2to1: {
+          name: 'Swap 1↔2',
+          apply: (grid) => this.multiColorMap(grid, { 1: 2, 2: 1 })
+        },
+        multiMap1to3_2to4_3to1: {
+          name: 'Cycle {1→3, 2→4, 3→1}',
+          apply: (grid) => this.multiColorMap(grid, { 1: 3, 2: 4, 3: 1 })
+        },
+        incrementAllColors: {
+          name: 'Increment All Colors (+2)',
+          apply: (grid) => this.incrementColors(grid, 2)
         },
         // Original color transforms
         lutInduction: {
@@ -592,6 +625,38 @@ class HypothesisOntology {
     return result;
   }
 
+  fillBorderCells(grid, fillColor) {
+    const result = grid.clone();
+
+    // Find non-zero content area
+    for (let r = 0; r < grid.rows; r++) {
+      for (let c = 0; c < grid.cols; c++) {
+        if (grid.data[r][c] === 0) {
+          // Check if this is a border cell (on edge or adjacent to content)
+          const isEdge = r === 0 || r === grid.rows - 1 || c === 0 || c === grid.cols - 1;
+          const hasNonZeroNeighbor = this.hasNonZeroNeighbor(grid, r, c);
+
+          if (isEdge || hasNonZeroNeighbor) {
+            result.data[r][c] = fillColor;
+          }
+        }
+      }
+    }
+
+    return result;
+  }
+
+  hasNonZeroNeighbor(grid, row, col) {
+    const neighbors = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+    for (const [dr, dc] of neighbors) {
+      const nr = row + dr, nc = col + dc;
+      if (nr >= 0 && nr < grid.rows && nc >= 0 && nc < grid.cols) {
+        if (grid.data[nr][nc] !== 0) return true;
+      }
+    }
+    return false;
+  }
+
   alignObjectsToAxis(grid) {
     const objects = grid.getObjects();
     const result = new Grid({ rows: grid.rows, cols: grid.cols });
@@ -802,6 +867,31 @@ class HypothesisOntology {
       for (let c = 0; c < result.cols; c++) {
         if (result.data[r][c] === fromColor) {
           result.data[r][c] = toColor;
+        }
+      }
+    }
+    return result;
+  }
+
+  multiColorMap(grid, colorMap) {
+    const result = grid.clone();
+    for (let r = 0; r < result.rows; r++) {
+      for (let c = 0; c < result.cols; c++) {
+        const oldColor = grid.data[r][c]; // Use original grid to avoid chain effects
+        if (colorMap[oldColor] !== undefined) {
+          result.data[r][c] = colorMap[oldColor];
+        }
+      }
+    }
+    return result;
+  }
+
+  incrementColors(grid, increment) {
+    const result = grid.clone();
+    for (let r = 0; r < result.rows; r++) {
+      for (let c = 0; c < result.cols; c++) {
+        if (result.data[r][c] !== 0) {
+          result.data[r][c] = (result.data[r][c] + increment) % 10;
         }
       }
     }
@@ -1972,25 +2062,43 @@ class ChainExecutor {
       yield [s];
     }
 
-    // Pairs
+    // Pairs - diverse hierarchies first
     if (maxLength >= 2) {
       for (const s1 of strategies) {
         for (const s2 of strategies) {
-          if (s1.hierarchy !== s2.hierarchy) { // Prefer diverse chains
+          if (s1.hierarchy !== s2.hierarchy) {
+            yield [s1, s2];
+          }
+        }
+      }
+      // Then same-hierarchy pairs (important for gravity+flip, scale+scale)
+      for (const s1 of strategies) {
+        for (const s2 of strategies) {
+          if (s1.hierarchy === s2.hierarchy && s1.name !== s2.name) {
             yield [s1, s2];
           }
         }
       }
     }
 
-    // Triples
+    // Triples - diverse hierarchies first
     if (maxLength >= 3) {
       for (const s1 of strategies) {
         for (const s2 of strategies) {
           for (const s3 of strategies) {
-            // Prefer diverse chains
             const hierarchies = new Set([s1.hierarchy, s2.hierarchy, s3.hierarchy]);
             if (hierarchies.size >= 2) {
+              yield [s1, s2, s3];
+            }
+          }
+        }
+      }
+      // Then same-hierarchy triples for complex transforms
+      for (const s1 of strategies) {
+        for (const s2 of strategies) {
+          for (const s3 of strategies) {
+            const names = new Set([s1.name, s2.name, s3.name]);
+            if (names.size >= 2) {
               yield [s1, s2, s3];
             }
           }
@@ -2464,6 +2572,54 @@ class UnlimitedSolverV3 {
             }
           }
         }
+      }
+    }
+
+    // Phase 3: Chain search (composite strategies)
+    if (this.config.verbose) {
+      console.log(`[Chain Search] Trying composite strategies...`);
+    }
+
+    for (const chain of this.executor.generateChains(this.safety.config.maxChainLength || 3)) {
+      this.stats.strategiesTried++;
+
+      try {
+        this.safety.check();
+      } catch (e) {
+        if (e instanceof SafetyError) {
+          if (this.config.verbose) {
+            console.log(`\nSafety limit during chain search: ${e.message}`);
+          }
+          break;
+        }
+        throw e;
+      }
+
+      // Create composite hypothesis from chain
+      const chainHypothesis = {
+        name: chain.map(s => s.name).join(' → '),
+        hierarchy: 'composite',
+        chain: chain,
+        strategy: {
+          apply: (grid) => {
+            let result = grid;
+            for (const step of chain) {
+              result = step.strategy.apply(result);
+            }
+            return result;
+          }
+        }
+      };
+
+      // Validate chain
+      const validationResult = this.validation.validate(chainHypothesis, trainingPairs, {
+        strictCounterexample: this.config.strictValidation
+      });
+
+      if (validationResult.passed) {
+        this.stats.validationPasses++;
+        this.memory.recordEpisode(task.id || 'unknown', chainHypothesis, trainingPairs, validationResult);
+        return this.finalizeResult(chainHypothesis, testPairs, trainingPairs, 'chain');
       }
     }
 

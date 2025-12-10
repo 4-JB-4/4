@@ -351,5 +351,25 @@
     "success": true,
     "score": 0.9803212851405623,
     "timestamp": 1765356156823
+  },
+  {
+    "taskId": "unknown",
+    "strategyName": "structural:flipVertical → spatial:gravityLeft",
+    "hierarchy": "composite",
+    "chain": [
+      "structural:flipVertical",
+      "spatial:gravityLeft"
+    ],
+    "complexity": "C(1,1,1,1,1,1,1)",
+    "inputFeatures": {
+      "rows": 3,
+      "cols": 3,
+      "uniqueColors": 4,
+      "objectCount": 3,
+      "density": 0.3333333333333333
+    },
+    "success": true,
+    "score": 0.9803212851405623,
+    "timestamp": 1765363030748
   }
 ]

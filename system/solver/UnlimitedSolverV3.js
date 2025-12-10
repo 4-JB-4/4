@@ -26,11 +26,12 @@ const MicroExtract = require('./MicroExtract');
 const { generateCandidatesFromMicro } = require('./generateCandidatesFromMicro');
 const { quickEvaluate } = require('./quickEvaluate');
 const { fracture, applyFragmentToGrid } = require('./microFracture');
+const { converge, convergeToTarget } = require('./ConvergenceEngine');
 const FlowSync = require('../safety/flow_sync_monitor');
 const logger = require('../logger');
 
-const SOLVER_VERSION = '3.0.0';
-const CODENAME = 'META_HORIZON';
+const SOLVER_VERSION = '3.3.0';
+const CODENAME = 'META_HORIZON_CONVERGENCE';
 
 // Import base Grid class from v2
 const { Grid } = require('./UnlimitedSolver');
@@ -2839,6 +2840,44 @@ class UnlimitedSolverV3 {
 
     if (this.config.verbose) {
       console.log(`[Beast Mode] Generated ${candidates.length} candidates`);
+    }
+
+    // NEW: Convergence pass to stabilize noisy transforms
+    const expectedOutput = trainingPairs[0]?.output;
+    const expectedData = expectedOutput instanceof Grid ? expectedOutput.data : (expectedOutput?.data || expectedOutput);
+
+    if (expectedData && candidates.length > 0) {
+      const convergenceResult = convergeToTarget(gridData, candidates, expectedData, 12);
+
+      if (convergenceResult.matched) {
+        logger.log('CONVERGE_MATCH_FOUND', {
+          cycles: convergenceResult.cycles,
+          rule: micro.rule
+        });
+
+        // Create hypothesis from converged result
+        const convergedHypothesis = {
+          name: `beast:converged_${micro.rule}`,
+          hierarchy: 'beast',
+          strategy: {
+            apply: () => new Grid(convergenceResult.grid)
+          }
+        };
+
+        const validationResult = this.validation.validate(convergedHypothesis, trainingPairs, {
+          strictCounterexample: this.config.strictValidation
+        });
+
+        if (validationResult.passed) {
+          logger.log('CONVERGE_VALIDATED', { rule: micro.rule, cycles: convergenceResult.cycles });
+          flowHandle.complete({ success: true, source: 'convergence' });
+          this.memory.recordEpisode(task?.id || 'unknown', convergedHypothesis, trainingPairs, validationResult);
+          return this.finalizeResult(convergedHypothesis, testPairs, trainingPairs, 'beast:convergence');
+        }
+      } else if (convergenceResult.cycles > 0) {
+        // Update gridData with converged partial result for candidate loop
+        logger.log('CONVERGE_PARTIAL', { cycles: convergenceResult.cycles, improved: convergenceResult.improved });
+      }
     }
 
     for (const candidate of candidates) {

@@ -28,11 +28,12 @@ const { quickEvaluate } = require('./quickEvaluate');
 const { fracture, applyFragmentToGrid } = require('./microFracture');
 const { converge, convergeToTarget } = require('./ConvergenceEngine');
 const { CompositeChains } = require('../arc/CompositeChains');
+const { MemoryDistillation } = require('../arc/MemoryDistillation');
 const FlowSync = require('../safety/flow_sync_monitor');
 const logger = require('../logger');
 
-const SOLVER_VERSION = '3.4.0';
-const CODENAME = 'META_HORIZON_COMPOSITE';
+const SOLVER_VERSION = '3.5.0';
+const CODENAME = 'META_HORIZON_DISTILL';
 
 // Import base Grid class from v2
 const { Grid } = require('./UnlimitedSolver');
@@ -2497,6 +2498,13 @@ class UnlimitedSolverV3 {
       maxTimeMs: this.config.maxTime
     });
 
+    // V3.5: Memory Distillation for auto-storage of successful strategies
+    this.distillation = new MemoryDistillation({
+      memoryPath: this.config.memoryPath,
+      verbose: this.config.verbose,
+      similarityThreshold: 0.75
+    });
+
     this.stats = {
       strategiesTried: 0,
       maxComplexityReached: 0,
@@ -2528,6 +2536,12 @@ class UnlimitedSolverV3 {
       console.log(`Training pairs: ${trainingPairs.length}`);
       console.log(`Test pairs: ${testPairs.length}`);
       console.log(`${'═'.repeat(70)}\n`);
+    }
+
+    // Phase 0.5: Distilled Memory Recall (V3.5)
+    const distilledResult = this.tryDistilledRecall(trainingPairs, testPairs, task);
+    if (distilledResult) {
+      return distilledResult;
     }
 
     // Phase 1: Memory lookup
@@ -3071,6 +3085,90 @@ class UnlimitedSolverV3 {
     return null;
   }
 
+  /**
+   * Phase 0.5: Try Distilled Memory Recall (V3.5)
+   * Attempts to match current task against previously distilled successful strategies
+   */
+  tryDistilledRecall(trainingPairs, testPairs, task) {
+    logger.log('DISTILL_RECALL_START', { taskId: task?.id });
+
+    // Normalize training pairs for fingerprinting
+    const normalizedPairs = trainingPairs.map(pair => ({
+      input: pair.input instanceof Grid ? pair.input.data || pair.input.toArray() : pair.input,
+      output: pair.output instanceof Grid ? pair.output.data || pair.output.toArray() : pair.output
+    }));
+
+    // Try to recall matching distilled strategy
+    const match = this.distillation.recallBest(normalizedPairs);
+
+    if (!match) {
+      logger.log('DISTILL_NO_MATCH', {});
+      return null;
+    }
+
+    logger.log('DISTILL_MATCH_FOUND', {
+      fingerprint: match.fingerprint?.hash,
+      similarity: match.similarity,
+      essence: match.essence?.name,
+      type: match.essence?.type
+    });
+
+    // Try to reconstruct and apply the strategy
+    try {
+      const essence = match.essence;
+      let hypothesis = null;
+
+      if (essence.type === 'composite' && essence.chain) {
+        // Reconstruct composite chain strategy
+        const chainEngine = new CompositeChains(4);
+
+        hypothesis = {
+          name: `distilled:${essence.name}`,
+          hierarchy: 'distilled',
+          chainSteps: essence.chain,
+          strategy: {
+            apply: (grid) => {
+              const inputData = grid.data || grid.toArray();
+              const result = chainEngine.applyChain(inputData, essence.chain);
+              return new Grid(result);
+            }
+          }
+        };
+      } else if (essence.type === 'beast' && essence.transform) {
+        // We can't easily reconstruct beast transforms, skip
+        logger.log('DISTILL_SKIP_BEAST', { transform: essence.transform });
+        return null;
+      }
+
+      if (hypothesis) {
+        // Validate the reconstructed hypothesis
+        const validationResult = this.validation.validate(hypothesis, trainingPairs, {
+          strictCounterexample: this.config.strictValidation
+        });
+
+        if (validationResult.passed) {
+          logger.log('DISTILL_VALIDATED', {
+            fingerprint: match.fingerprint?.hash,
+            chain: essence.chain
+          });
+
+          // Record successful recall
+          this.distillation.recordOutcome(match.fingerprint.hash, true);
+
+          return this.finalizeResult(hypothesis, testPairs, trainingPairs, 'distilled');
+        } else {
+          // Record failed recall (strategy didn't work for this task)
+          this.distillation.recordOutcome(match.fingerprint.hash, false);
+          logger.log('DISTILL_VALIDATION_FAILED', { fingerprint: match.fingerprint?.hash });
+        }
+      }
+    } catch (e) {
+      logger.log('DISTILL_ERROR', { error: e.message }, 'WARN');
+    }
+
+    return null;
+  }
+
   finalizeResult(strategy, testPairs, trainingPairs, source) {
     this.stats.endTime = Date.now();
 
@@ -3102,6 +3200,32 @@ class UnlimitedSolverV3 {
       console.log(`Time: ${this.stats.endTime - this.stats.startTime}ms`);
       console.log(`Confidence: ${(explanation.confidence * 100).toFixed(1)}%`);
       console.log(`${'═'.repeat(70)}\n`);
+    }
+
+    // V3.5: Distill successful strategy for future recall
+    if (source !== 'distilled') {  // Don't re-distill already distilled strategies
+      try {
+        const normalizedPairs = trainingPairs.map(pair => ({
+          input: pair.input instanceof Grid ? pair.input.data || pair.input.toArray() : pair.input,
+          output: pair.output instanceof Grid ? pair.output.data || pair.output.toArray() : pair.output
+        }));
+
+        const fingerprint = this.distillation.distill({
+          taskId: strategy.name,
+          trainPairs: normalizedPairs,
+          strategy,
+          source,
+          solveTime: this.stats.endTime - this.stats.startTime
+        });
+
+        logger.log('DISTILL_STORED', {
+          fingerprint: fingerprint.hash,
+          source,
+          strategy: strategy.name
+        });
+      } catch (e) {
+        logger.log('DISTILL_STORE_ERROR', { error: e.message }, 'WARN');
+      }
     }
 
     return {
@@ -3140,7 +3264,8 @@ class UnlimitedSolverV3 {
       hierarchies: Object.keys(this.ontology.hierarchies),
       validationStages: this.validation.stages,
       memoryLayers: Object.keys(this.memory.layers),
-      memoryStats: this.memory.getStats()
+      memoryStats: this.memory.getStats(),
+      distillationStats: this.distillation.getStats()
     };
   }
 }

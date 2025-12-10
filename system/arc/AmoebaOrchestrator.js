@@ -15,6 +15,20 @@ const { primitives } = require('./Primitives');
 const { gridsEqual } = require('./ReasoningEngine');
 const { gridFingerprint } = require('./fingerprint');
 
+// Live dashboard broadcasting (optional - gracefully handles missing server)
+let broadcastMetrics, broadcastProgress, broadcastBranchEvent;
+try {
+  const ws = require('./amoeba_ws_server');
+  broadcastMetrics = ws.broadcastMetrics;
+  broadcastProgress = ws.broadcastProgress;
+  broadcastBranchEvent = ws.broadcastBranchEvent;
+} catch (e) {
+  // WS server not running - use no-ops
+  broadcastMetrics = () => {};
+  broadcastProgress = () => {};
+  broadcastBranchEvent = () => {};
+}
+
 class AmoebaOrchestrator {
   constructor(config = {}) {
     this.phases = ['MemoryFastPath', 'CompositeChains', 'Convergence', 'InfiniteSearch'];
@@ -62,6 +76,15 @@ class AmoebaOrchestrator {
     for (const phase of this.phases) {
       if (this.verbose) console.log(`🔹 Phase: ${phase}`);
 
+      // Broadcast phase start
+      broadcastProgress({
+        generation: this.generation,
+        phase,
+        status: 'started',
+        totalPhases: this.phases.length,
+        currentPhase: this.phases.indexOf(phase) + 1
+      });
+
       const nextInputs = [];
 
       for (const inp of currentInputs) {
@@ -70,6 +93,14 @@ class AmoebaOrchestrator {
 
         for (let i = 0; i < branches; i++) {
           this.stats.totalBranches++;
+
+          // Broadcast branch spawn
+          broadcastBranchEvent({
+            event: 'spawn',
+            phase,
+            branchId: i,
+            totalBranches: this.stats.totalBranches
+          });
 
           try {
             const result = await this.executePhase(phase, inp, i);
@@ -80,20 +111,58 @@ class AmoebaOrchestrator {
                 console.log(`✨ WIN in ${phase} (branch ${i}): ${result.pipeline?.join(' -> ') || 'direct'}`);
                 this.stats.successfulBranches++;
                 this.stats.phaseHits[phase] = (this.stats.phaseHits[phase] || 0) + 1;
+
+                // Broadcast win
+                broadcastMetrics({
+                  phase,
+                  branchId: i,
+                  status: 'win',
+                  pipeline: result.pipeline,
+                  totalBranches: this.stats.totalBranches,
+                  successfulBranches: this.stats.successfulBranches
+                });
+
                 return [result];
               }
+
+              // Broadcast branch completion with metrics
+              broadcastMetrics({
+                phase,
+                branchId: i,
+                status: 'completed',
+                score: result.score || 0,
+                totalBranches: this.stats.totalBranches,
+                successRate: this.stats.successfulBranches / this.stats.totalBranches
+              });
 
               nextInputs.push(result);
               this.instances.push({ phase, branch: i, result });
             }
           } catch (e) {
             if (this.verbose) console.log(`  ⚠️ Branch ${i} failed: ${e.message}`);
+
+            // Broadcast branch failure
+            broadcastBranchEvent({
+              event: 'failed',
+              phase,
+              branchId: i,
+              error: e.message
+            });
           }
         }
       }
 
       currentInputs = nextInputs.length > 0 ? nextInputs : currentInputs;
       this.collectFeedback(currentInputs);
+
+      // Broadcast phase completion
+      broadcastProgress({
+        generation: this.generation,
+        phase,
+        status: 'completed',
+        branchesCompleted: nextInputs.length,
+        branchFactor: this.branchFactor
+      });
 
       // Early exit if no progress
       if (nextInputs.length === 0 && phase !== 'InfiniteSearch') {
@@ -198,6 +267,7 @@ class AmoebaOrchestrator {
 
     // Analyze and evolve
     const avgScore = results.reduce((s, r) => s + (r.score || 0), 0) / results.length;
+    const prevBranchFactor = this.branchFactor;
 
     if (this.verbose) {
       console.log(`📈 Feedback: ${results.length} entries, avg score: ${avgScore.toFixed(3)}`);
@@ -211,6 +281,28 @@ class AmoebaOrchestrator {
       this.branchFactor = Math.max(this.branchFactor - 1, 1);
       if (this.verbose) console.log(`  🧬 Evolved: branchFactor → ${this.branchFactor}`);
     }
+
+    // Broadcast evolution event if config changed
+    if (this.branchFactor !== prevBranchFactor) {
+      broadcastBranchEvent({
+        event: 'evolved',
+        generation: this.generation,
+        prevBranchFactor,
+        newBranchFactor: this.branchFactor,
+        avgScore,
+        feedbackCount: results.length
+      });
+    }
+
+    // Broadcast feedback metrics
+    broadcastMetrics({
+      type: 'feedback',
+      generation: this.generation,
+      feedbackCount: results.length,
+      avgScore,
+      branchFactor: this.branchFactor,
+      totalFeedback: this.feedback.length
+    });
   }
 
   /**

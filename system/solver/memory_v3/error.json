@@ -11782,5 +11782,113 @@
       "density": 1
     },
     "timestamp": 1765351712444
+  },
+  {
+    "taskId": "sample_color_replace",
+    "strategy": "counting:cardinalityMapping",
+    "inputFeatures": {
+      "rows": 2,
+      "cols": 2,
+      "uniqueColors": 2,
+      "objectCount": 2,
+      "density": 0.5
+    },
+    "timestamp": 1765355020567
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:flipHorizontal",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020642
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:flipVertical",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020645
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:rotate90",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020647
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:rotate180",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020650
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:rotate270",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020652
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:transpose",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020655
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:scale2x",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020657
+  },
+  {
+    "taskId": "test_double_scale",
+    "strategy": "structural:scale3x",
+    "inputFeatures": {
+      "rows": 1,
+      "cols": 1,
+      "uniqueColors": 1,
+      "objectCount": 1,
+      "density": 1
+    },
+    "timestamp": 1765355020661
   }
 ]

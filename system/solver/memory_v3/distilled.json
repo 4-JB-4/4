@@ -63,12 +63,12 @@
     },
     "source": "memory",
     "solveTime": 9,
-    "hitCount": 4,
+    "hitCount": 8,
     "successCount": 1,
     "failCount": 0,
     "created": 1765369607762,
-    "lastUsed": 1765369607838,
-    "score": 1.5287712379549447
+    "lastUsed": 1765373327660,
+    "score": 1.867970000576925
   },
   {
     "taskId": "structural:flipHorizontal",
@@ -134,12 +134,12 @@
     },
     "source": "memory",
     "solveTime": 5,
-    "hitCount": 1,
+    "hitCount": 2,
     "successCount": 1,
     "failCount": 0,
     "created": 1765369607769,
-    "lastUsed": 1765369607769,
-    "score": 1
+    "lastUsed": 1765373327591,
+    "score": 1.2339850002884625
   },
   {
     "taskId": "structural:flipVertical",
@@ -204,12 +204,12 @@
     },
     "source": "memory",
     "solveTime": 6,
-    "hitCount": 1,
+    "hitCount": 2,
     "successCount": 1,
     "failCount": 0,
     "created": 1765369607776,
-    "lastUsed": 1765369607776,
-    "score": 1
+    "lastUsed": 1765373327599,
+    "score": 1.2339850002884625
   },
   {
     "taskId": "structural:rotate90",
@@ -275,12 +275,12 @@
     },
     "source": "memory",
     "solveTime": 4,
-    "hitCount": 1,
+    "hitCount": 2,
     "successCount": 1,
     "failCount": 0,
     "created": 1765369607782,
-    "lastUsed": 1765369607782,
-    "score": 1
+    "lastUsed": 1765373327605,
+    "score": 1.2339850002884625
   },
   {
     "taskId": "structural:scale2x",
@@ -343,12 +343,12 @@
     },
     "source": "memory",
     "solveTime": 4,
-    "hitCount": 1,
+    "hitCount": 2,
     "successCount": 1,
     "failCount": 0,
     "created": 1765369607787,
-    "lastUsed": 1765369607787,
-    "score": 1
+    "lastUsed": 1765373327611,
+    "score": 1.2339850002884625
   },
   {
     "taskId": "structural:rotate270",
@@ -414,12 +414,12 @@
     },
     "source": "memory",
     "solveTime": 5,
-    "hitCount": 1,
+    "hitCount": 2,
     "successCount": 1,
     "failCount": 0,
     "created": 1765369607799,
-    "lastUsed": 1765369607799,
-    "score": 1
+    "lastUsed": 1765373327624,
+    "score": 1.2339850002884625
   },
   {
     "taskId": "structural:scale4x",
@@ -482,11 +482,11 @@
     },
     "source": "memory",
     "solveTime": 6,
-    "hitCount": 1,
+    "hitCount": 2,
     "successCount": 1,
     "failCount": 0,
     "created": 1765369607806,
-    "lastUsed": 1765369607806,
-    "score": 1
+    "lastUsed": 1765373327629,
+    "score": 1.2339850002884625
   }
 ]

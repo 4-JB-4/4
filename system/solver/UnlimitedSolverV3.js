@@ -27,11 +27,12 @@ const { generateCandidatesFromMicro } = require('./generateCandidatesFromMicro')
 const { quickEvaluate } = require('./quickEvaluate');
 const { fracture, applyFragmentToGrid } = require('./microFracture');
 const { converge, convergeToTarget } = require('./ConvergenceEngine');
+const { CompositeChains } = require('../arc/CompositeChains');
 const FlowSync = require('../safety/flow_sync_monitor');
 const logger = require('../logger');
 
-const SOLVER_VERSION = '3.3.0';
-const CODENAME = 'META_HORIZON_CONVERGENCE';
+const SOLVER_VERSION = '3.4.0';
+const CODENAME = 'META_HORIZON_COMPOSITE';
 
 // Import base Grid class from v2
 const { Grid } = require('./UnlimitedSolver');
@@ -2541,6 +2542,12 @@ class UnlimitedSolverV3 {
       return beastResult;
     }
 
+    // Phase 1.6: Composite Chains - Multi-hop transformation search
+    const compositeResult = this.tryCompositeChains(trainingPairs, testPairs, task);
+    if (compositeResult) {
+      return compositeResult;
+    }
+
     // Phase 2: Multi-dimensional search
     for (let totalComplexity = 7; totalComplexity <= this.config.maxComplexity; totalComplexity++) {
       if (this.config.verbose && totalComplexity % 7 === 0) {
@@ -2977,6 +2984,91 @@ class UnlimitedSolverV3 {
         }
       }
     };
+  }
+
+  /**
+   * Phase 1.6: Try Composite Chains
+   * Multi-hop transformation search using primitives
+   */
+  tryCompositeChains(trainingPairs, testPairs, task) {
+    const flowHandle = FlowSync.startFlow(`composite_${Date.now()}`, { task: task?.id });
+
+    if (!flowHandle.allowed) {
+      logger.log('COMPOSITE_BLOCKED', { reason: flowHandle.reason });
+      return null;
+    }
+
+    // Extract grid data from training pairs
+    const normalizedPairs = trainingPairs.map(pair => ({
+      input: pair.input instanceof Grid ? pair.input.data || pair.input.toArray() : pair.input,
+      output: pair.output instanceof Grid ? pair.output.data || pair.output.toArray() : pair.output
+    }));
+
+    if (this.config.verbose) {
+      console.log(`[Composite Chains] Searching for multi-hop transformation...`);
+    }
+
+    logger.log('COMPOSITE_START', {
+      trainingPairs: normalizedPairs.length,
+      maxDepth: 4
+    });
+
+    try {
+      // Initialize CompositeChains engine
+      const chainEngine = new CompositeChains(4, {
+        maxCandidates: 5000,
+        earlyExit: true,
+        verbose: this.config.verbose
+      });
+
+      // Find valid chain
+      const validChain = chainEngine.findValidChain(normalizedPairs);
+
+      if (validChain) {
+        logger.log('COMPOSITE_FOUND', {
+          chain: validChain.chain,
+          depth: validChain.chain.length
+        });
+
+        // Create hypothesis from chain
+        const hypothesis = {
+          name: `composite:${validChain.chain.join('_')}`,
+          hierarchy: 'composite',
+          chainSteps: validChain.chain,
+          strategy: {
+            apply: (grid) => {
+              const inputData = grid.data || grid.toArray();
+              const result = chainEngine.applyChain(inputData, validChain.chain);
+              return new Grid(result);
+            }
+          }
+        };
+
+        // Validate hypothesis
+        const validationResult = this.validation.validate(hypothesis, trainingPairs, {
+          strictCounterexample: this.config.strictValidation
+        });
+
+        if (validationResult.passed) {
+          logger.log('COMPOSITE_VALIDATED', {
+            chain: validChain.chain,
+            stats: chainEngine.stats
+          });
+
+          flowHandle.complete({ success: true, source: 'composite' });
+          this.memory.recordEpisode(task?.id || 'unknown', hypothesis, trainingPairs, validationResult);
+
+          return this.finalizeResult(hypothesis, testPairs, trainingPairs, 'composite');
+        }
+      }
+
+      logger.log('COMPOSITE_NO_MATCH', { stats: chainEngine.stats });
+    } catch (e) {
+      logger.log('COMPOSITE_ERROR', { error: e.message }, 'WARN');
+    }
+
+    flowHandle.complete({ success: false });
+    return null;
   }
 
   finalizeResult(strategy, testPairs, trainingPairs, source) {

@@ -58,5 +58,11 @@
     "hierarchy": "composite",
     "count": 2,
     "lastUsed": 1765363030748
+  },
+  {
+    "chain": "composite:rotate180_gravityLeft",
+    "hierarchy": "composite",
+    "count": 1,
+    "lastUsed": 1765368231457
   }
 ]

@@ -42,6 +42,22 @@ const CryptoEngine = require('./crypto/CryptoEngine');
 // Sales
 const SalesEngine = require('./sales/SalesEngine');
 
+// Unlimited Solver - Infinite Reasoning Engine
+const {
+  UnlimitedSolver,
+  Grid,
+  Strategy,
+  ReasoningEngine,
+  SolverMemory,
+  infiniteStrategies,
+  generateStrategiesOfDepth,
+  getPrimitives,
+  validateStrategyOnTraining,
+  scoreStrategyOnTraining,
+  VERSION: SOLVER_VERSION,
+  CODENAME: SOLVER_CODENAME
+} = require('./solver/UnlimitedSolver');
+
 // ═══════════════════════════════════════════════════════════════════
 // SOVEREIGN SYSTEMS (NEW)
 // ═══════════════════════════════════════════════════════════════════
@@ -154,7 +170,10 @@ async function initializeSystem(config = {}) {
     nexus: null,
     genesis: null,
     sdk: null,
-    governance: null
+    governance: null,
+
+    // Solver
+    solver: null
   };
 
   // Initialize based on config
@@ -229,6 +248,11 @@ async function initializeSystem(config = {}) {
   if (config.governance !== false) {
     systems.governance = new HiveGovernance(config.governanceConfig);
     console.log('✓ Hive Governance initialized');
+  }
+
+  if (config.solver !== false) {
+    systems.solver = new UnlimitedSolver(config.solverConfig);
+    console.log('✓ Unlimited Solver initialized (Infinite Reasoning Engine)');
   }
 
   console.log('\n🌟 0RB System fully operational\n');
@@ -307,6 +331,7 @@ module.exports = {
   NeuralLink,
   CryptoEngine,
   SalesEngine,
+  UnlimitedSolver,
 
   // Game Engines
   Games: {
@@ -380,5 +405,21 @@ module.exports = {
     PROPOSAL_CATEGORIES,
     PROPOSAL_STATES,
     VOTE_TYPES
+  },
+
+  // Unlimited Solver - Infinite Reasoning Engine
+  Solver: {
+    UnlimitedSolver,
+    Grid,
+    Strategy,
+    ReasoningEngine,
+    SolverMemory,
+    infiniteStrategies,
+    generateStrategiesOfDepth,
+    getPrimitives,
+    validateStrategyOnTraining,
+    scoreStrategyOnTraining,
+    VERSION: SOLVER_VERSION,
+    CODENAME: SOLVER_CODENAME
   }
 };
